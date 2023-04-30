@@ -1,7 +1,9 @@
+import "./styles/styles.scss"
+
 const App = () => {
   return (
     <div className="app">
-      Hello World
+      <h1>Hello World</h1>
     </div>
   )
 }
