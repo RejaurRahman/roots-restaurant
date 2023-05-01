@@ -12,6 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Header dropdown
 - Homepage slider
 - Homepage list icons text
+- Add Favicon
 
 ## Available Scripts
 

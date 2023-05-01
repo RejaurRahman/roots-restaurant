@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Logo from "../../assets/logo.png"
 import "./Footer.scss"
-import data from "../../data/data.json"
+import data from "../../data/content.json"
 
 library.add(
   faAngleUp,
