@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Tasks to do
+
+- Footer Links set active class dynamically
+- Newsletter Form submittion
+- Scroll to top functionality
+- Font added
+- Active class set on Header navigation
+- Header dropdown
+- Homepage slider
+- Homepage list icons text
+
 ## Available Scripts
 
 In the project directory, you can run:

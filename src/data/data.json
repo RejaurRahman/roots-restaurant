@@ -1,0 +1,76 @@
+{
+  "business_details": {
+    "address": {
+      "street": "254 Brampton Road",
+      "city": "Bexleyheath",
+      "state": "Kent",
+      "county": "United Kingdom",
+      "postal_code": "DA7 5SB",
+      "email": "info@rootsrestaurant.com"
+    },
+    "phone": "+44 000 000 0000",
+    "open_days": "Monday to Sunday",
+    "open_hours": "11:30am - 11:00pm"
+  },
+  "footer_copy": {
+    "links_heading": "Useful Links",
+    "newsletter_heading": "Join Our Newsletter Now",
+    "newsletter_copy": "Get E-mail updates about our latest shop and special offers."
+  },
+  "footer_links": [
+    {
+      "ul_list": 1,
+      "text": "About Us",
+      "href": "/",
+      "order": 1
+    },
+    {
+      "ul_list": 1,
+      "text": "Contact Us",
+      "href": "/",
+      "order": 4
+    },
+    {
+      "ul_list": 2,
+      "text": "Coronavirus FAQ",
+      "href": "/",
+      "order": 3
+    },
+    {
+      "ul_list": 2,
+      "text": "FAQ",
+      "href": "/",
+      "order": 2
+    },
+    {
+      "ul_list": 2,
+      "text": "Media",
+      "href": "/",
+      "order": 1
+    },
+    {
+      "ul_list": 1,
+      "text": "Our Sitemap",
+      "href": "/",
+      "order": 3
+    },
+    {
+      "ul_list": 1,
+      "text": "Privacy Policy",
+      "href": "/",
+      "order": 2
+    },
+    {
+      "ul_list": 1,
+      "text": "Sustainability",
+      "href": "/",
+      "order": 5
+    },
+    {
+      "ul_list": 2,
+      "text": "Terms and Conditions",
+      "href": "/",
+      "order": 4
+    }
+  ]
+}
