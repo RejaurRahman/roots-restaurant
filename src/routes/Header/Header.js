@@ -23,13 +23,13 @@ const Header = () => {
       <div className="top-header">
         <div className="container top-header--container">
           <div className="row">
-            <div className="col-12 col-md-6">
-              <span className="top-header--shipping">
+            <div className="col-12 col-md-6 top-header--shipping">
+              <span>
                 Free Shipping on all orders
               </span>
             </div>
             <div className="col-12 col-md-6 top-header--right-column">
-              <div className="top-header--social">
+              <>
                 <ul className="top-header--social-list">
                   <li className="top-header--social-item">
                     <a href="https://en-gb.facebook.com/" rel="noreferrer" target="_blank" className="top-header--social-link">
@@ -47,21 +47,15 @@ const Header = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
-              <div className="top-header--user">
-                <span className="top-header--user-icon">
-                <FontAwesomeIcon icon={["fas", "fa-user"]} />
-                </span>
-                <Link to="/" className="top-header--user-link">
-                  Login
+              </>
+              <>
+                <Link to="/" className="top-header--user-link top-header--login">
+                  <span>Login</span>
                 </Link>
-                <span className="top-header--user-divider">
-                  /
-                </span>
-                <Link to="/" className="top-header--user-link">
-                  Register
+                <Link to="/" className="top-header--user-link top-header--register">
+                  <span>Register</span>
                 </Link>
-              </div>
+              </>
             </div>
           </div>
         </div>
