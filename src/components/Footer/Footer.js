@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className="container footer-container">
         <div className="row">
-          <div className="col-12 col-lg-4 footer--left">
+          <div className="col-12 col-lg-4">
             <Link className="footer--logo" to="/">
               <img
                 src={Logo}
@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-lg-4 footer--middle">
+          <div className="col-12 col-lg-4">
             <h4 className="footer--heading">
               {data.footer_copy.links_heading}
             </h4>
@@ -72,7 +72,7 @@ const Footer = () => {
                   .sort((a, b) => a.ul_list - b.ul_list || a.order - b.order)
                   .filter(link => link.ul_list === 1)
                   .map((link, index) => (
-                    <li className="footer--pages-item" key={index}>
+                    <li key={index}>
                       <Link className="footer--pages-link" to={link.href}>
                         {link.text}
                       </Link>
@@ -84,7 +84,7 @@ const Footer = () => {
                   .sort((a, b) => a.ul_list - b.ul_list || a.order - b.order)
                   .filter(link => link.ul_list === 2)
                   .map((link, index) => (
-                    <li className="footer--pages-item" key={index}>
+                    <li key={index}>
                       <Link className="footer--pages-link" to={link.href}>
                         {link.text}
                       </Link>
@@ -93,7 +93,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-12 col-lg-4 footer--right">
+          <div className="col-12 col-lg-4">
             <h4 className="footer--heading">
               {data.footer_copy.newsletter_heading}
             </h4>
