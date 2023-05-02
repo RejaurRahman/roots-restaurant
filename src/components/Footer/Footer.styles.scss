@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFF;
+  color: #fff;
 }
 
 .footer--copyright-text {
@@ -106,26 +106,6 @@
   font-weight: bold;
 }
 
-.footer--form {
-  display: flex;
-
-  .form-control {
-    border-radius: 0;
-    height: 46px;
-    border-top: 1px solid #e9e8e8;
-    border-left: 1px solid #e9e8e8;
-    border-bottom: 1px solid #e9e8e8;
-    border-right: none;
-  }
-
-  .btn {
-    color: #FFF;
-    text-transform: uppercase;
-    background-color: #088972;
-    border-radius: 0;
-  }
-}
-
 .footer--social {
   margin-top: 30px;
   list-style-type: none;
@@ -138,7 +118,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #FFF;
+  background-color: #fff;
   margin-right: 15px;
 }
 

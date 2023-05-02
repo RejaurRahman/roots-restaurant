@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Logo from "../../assets/images/logo.png"
 import "./Footer.styles.scss"
 import data from "../../data/content.json"
+import FooterForm from "./FooterForm/FooterForm"
 
 library.add(
   faAngleUp,
@@ -97,12 +98,7 @@ const Footer = () => {
             <p className="footer--bodycopy">
               {data.footer_copy.newsletter_copy}
             </p>
-            <form className="footer--form">
-              <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn" type="submit">
-                Subscribe
-              </button>
-            </form>
+            <FooterForm />
             <ul className="footer--social">
               <li className="footer--social-list">
                 <a href="https://en-gb.facebook.com/" rel="noreferrer" target="_blank" className="footer--social-link">
