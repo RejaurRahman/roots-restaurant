@@ -10,7 +10,7 @@ library.add(
   faBoxArchive,
   faRibbon,
   faTruck,
-  faUserClock,
+  faUserClock
 )
 
 const ServicesList = () => {
