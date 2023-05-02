@@ -1,6 +1,6 @@
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
-import CategoryItem from "./components/CategoryItem/CategoryItem"
+import Directory from "./components/Directory/Directory"
 
 import "./styles/styles.scss"
 
@@ -46,15 +46,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      {
-        categories.map(({ id, title, imageUrl }) => (
-          <CategoryItem
-            key={id}
-            imageUrl={imageUrl}
-            title={title}
-          />
-        ))
-      }
+      <Directory categories={categories} />
       <Footer />
     </div>
   )
