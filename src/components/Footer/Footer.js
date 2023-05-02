@@ -4,7 +4,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/images/logo.png"
 import "./Footer.styles.scss"
 import data from "../../data/content.json"
 

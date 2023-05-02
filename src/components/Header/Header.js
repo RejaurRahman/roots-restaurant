@@ -4,7 +4,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faBars, faBagShopping, faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/images/logo.png"
 import "./Header.styles.scss"
 
 library.add(

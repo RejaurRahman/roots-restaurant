@@ -7,7 +7,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Footer Links set active class dynamically
 - Newsletter Form submittion
 - Scroll to top functionality
-- Font added
 - Active class set on Header navigation
 - Header dropdown
 - Homepage slider
