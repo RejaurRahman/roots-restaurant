@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "react-router-dom"
+
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
@@ -32,13 +34,13 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="row">
           <div className="col-12 col-lg-4 footer--left">
-            <a href="/" className="footer--logo">
+            <Link className="footer--logo" to="/">
               <img
                 src={Logo}
                 alt="Roots Restaurant"
                 className="footer--logo-image"
               />
-            </a>
+            </Link>
             <ul className="footer--address">
               <li className="footer--address-item">
                 {data.business_details.address.street}
@@ -71,9 +73,9 @@ const Footer = () => {
                   .filter(link => link.ul_list === 1)
                   .map((link, index) => (
                     <li className="footer--pages-item" key={index}>
-                      <a href={link.href} className="footer--pages-link">
+                      <Link className="footer--pages-link" to={link.href}>
                         {link.text}
-                      </a>
+                      </Link>
                     </li>
                   ))}
               </ul>
@@ -83,9 +85,9 @@ const Footer = () => {
                   .filter(link => link.ul_list === 2)
                   .map((link, index) => (
                     <li className="footer--pages-item" key={index}>
-                      <a href={link.href} className="footer--pages-link">
+                      <Link className="footer--pages-link" to={link.href}>
                         {link.text}
-                      </a>
+                      </Link>
                     </li>
                   ))}
               </ul>

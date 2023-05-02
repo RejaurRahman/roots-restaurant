@@ -1,4 +1,6 @@
 import React from "react"
+import { Outlet, Link } from "react-router-dom"
+
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faBars, faBagShopping, faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons"
@@ -50,15 +52,15 @@ const Header = () => {
                 <span className="top-header--user-icon">
                 <FontAwesomeIcon icon={["fas", "fa-user"]} />
                 </span>
-                <a href="/" className="top-header--user-link">
+                <Link to="/" className="top-header--user-link">
                   Login
-                </a>
+                </Link>
                 <span className="top-header--user-divider">
                   /
                 </span>
-                <a href="/" className="top-header--user-link">
+                <Link to="/" className="top-header--user-link">
                   Register
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -69,9 +71,9 @@ const Header = () => {
         <div className="container navbar--container">
           <div className="row navbar--row">
             <div className="col-12 col-lg-7 navbar--left">
-              <a className="navbar-brand" href="/">
+              <Link className="navbar-brand" to="/">
                 <img src={Logo} alt="Roots Restaurant" className="navbar-logo" />
-              </a>
+              </Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon">
                   <FontAwesomeIcon icon={["fas", "fa-bars"]} size="2x" />
@@ -80,18 +82,18 @@ const Header = () => {
               <div className="collapse navbar-collapse" id="headerNav">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/">
+                    <Link className="nav-link active" aria-current="page" to="/">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item dropdown">
                     <div className="btn-group">
-                      <a href="/" className="btn">
+                      <a className="btn" href="/">
                         Shop
                       </a>
                       <a href="/" className="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -101,65 +103,65 @@ const Header = () => {
                       </a>
                       <ul className="dropdown-menu">
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Soup
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Desert
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Italian
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Indian
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Oriental
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Fast Food
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Drinks
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             Salad
-                          </a>
+                          </Link>
                         </li>
                         <li>
                           <hr className="dropdown-divider" />
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link className="dropdown-item" to="/">
                             View All
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/">
                       Media
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -168,12 +170,12 @@ const Header = () => {
               <div className="navbar-product--icons">
                 <ul className="navbar-product--icons-list">
                   <li className="navbar-product--icons-item">
-                    <a href="/" className="navbar-product--icons-link">
+                    <Link className="navbar-product--icons-link" to="/">
                       <FontAwesomeIcon icon={["fas", "fa-bag-shopping"]} />
                       <span className="navbar-product--icons-value">
                         3
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="navbar-product--icons-item">
                     <FontAwesomeIcon icon={["fas", "fa-cart-shopping"]} />
@@ -187,6 +189,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <Outlet />
     </>
   )
 }
