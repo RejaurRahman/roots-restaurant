@@ -1,4 +1,5 @@
 import Directory from "../../components/Directory/Directory"
+import ServicesList from "../../components/ServicesList/ServicesList"
 
 const Home = () => {
   const categories = [
@@ -40,7 +41,10 @@ const Home = () => {
   ]
 
   return (
-    <Directory categories={categories} />
+    <>
+      <ServicesList />
+      <Directory categories={categories} />
+    </>
   )
 }
 

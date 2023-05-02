@@ -12,6 +12,32 @@
     "open_days": "Monday to Sunday",
     "open_hours": "11:30am - 11:00pm"
   },
+  "services_list": [
+    {
+      "colour": "#7D1B7E",
+      "heading": "Free Shipping",
+      "iconName": "fa-truck",
+      "text": "On All Orders"
+    },
+    {
+      "colour": "#C11B17",
+      "heading": "Always Fresh",
+      "iconName": "fa-box-archive",
+      "text": "Product Well Packaged"
+    },
+    {
+      "colour": "#E56717",
+      "heading": "Superior Quality",
+      "iconName": "fa-ribbon",
+      "text": "Quality Food and Drinks"
+    },
+    {
+      "colour": "#FBB917",
+      "heading": "Support",
+      "iconName": "fa-user-clock",
+      "text": "24/7 Available"
+    }
+  ],
   "footer_copy": {
     "links_heading": "Useful Links",
     "newsletter_heading": "Join Our Newsletter Now",

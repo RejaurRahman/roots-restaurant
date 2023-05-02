@@ -9,9 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Scroll to top functionality
 - Active class set on Header navigation
 - Header dropdown
-- Homepage slider
-- Homepage list icons text
-- Add Favicon
+- Homepage Image Banner slider
+- Product Homepage slider
 
 ## Node Version
 
