@@ -14,6 +14,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Homepage list icons text
 - Add Favicon
 
+## Node Version
+
+Node Version running on project should be version 14+.
+
 ## Available Scripts
 
 In the project directory, you can run:
