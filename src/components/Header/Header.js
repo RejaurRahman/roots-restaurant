@@ -5,7 +5,7 @@ import { faBars, faBagShopping, faCartShopping, faUser } from "@fortawesome/free
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Logo from "../../assets/logo.png"
-import "./Header.scss"
+import "./Header.styles.scss"
 
 library.add(
   fab,
@@ -22,7 +22,9 @@ const Header = () => {
         <div className="container top-header--container">
           <div className="row">
             <div className="col-12 col-md-6">
-              <span className="top-header--shipping">Free Shipping on all orders</span>
+              <span className="top-header--shipping">
+                Free Shipping on all orders
+              </span>
             </div>
             <div className="col-12 col-md-6 top-header--right-column">
               <div className="top-header--social">
@@ -48,16 +50,22 @@ const Header = () => {
                 <span className="top-header--user-icon">
                 <FontAwesomeIcon icon={["fas", "fa-user"]} />
                 </span>
-                <a href="/" className="top-header--user-link">Login</a>
-                <span className="top-header--user-divider">/</span>
-                <a href="/" className="top-header--user-link">Register</a>
+                <a href="/" className="top-header--user-link">
+                  Login
+                </a>
+                <span className="top-header--user-divider">
+                  /
+                </span>
+                <a href="/" className="top-header--user-link">
+                  Register
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <nav id="top-navbar" className="navbar navbar-expand-lg sticky-top">
+      <nav className="navbar navbar-expand-lg sticky-top">
         <div className="container navbar--container">
           <div className="row navbar--row">
             <div className="col-12 col-lg-7 navbar--left">
@@ -72,36 +80,86 @@ const Header = () => {
               <div className="collapse navbar-collapse" id="headerNav">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/">Home</a>
+                    <a className="nav-link active" aria-current="page" href="/">
+                      Home
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">About</a>
+                    <a className="nav-link" href="/">
+                      About
+                    </a>
                   </li>
                   <li className="nav-item dropdown">
                     <div className="btn-group">
-                      <a href="/" className="btn">Shop</a>
+                      <a href="/" className="btn">
+                        Shop
+                      </a>
                       <a href="/" className="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span className="visually-hidden">Toggle Dropdown</span>
+                        <span className="visually-hidden">
+                          Toggle Dropdown
+                        </span>
                       </a>
                       <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="/">Soup</a></li>
-                        <li><a className="dropdown-item" href="/">Desert</a></li>
-                        <li><a className="dropdown-item" href="/">Italian</a></li>
-                        <li><a className="dropdown-item" href="/">Indian</a></li>
-                        <li><a className="dropdown-item" href="/">Oriental</a></li>
-                        <li><a className="dropdown-item" href="/">Fast Food</a></li>
-                        <li><a className="dropdown-item" href="/">Drinks</a></li>
-                        <li><a className="dropdown-item" href="/">Salad</a></li>
-                        <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="/">View All</a></li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Soup
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Desert
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Italian
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Indian
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Oriental
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Fast Food
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Drinks
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            Salad
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="/">
+                            View All
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">Media</a>
+                    <a className="nav-link" href="/">
+                      Media
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">Contact</a>
+                    <a className="nav-link" href="/">
+                      Contact
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -112,12 +170,16 @@ const Header = () => {
                   <li className="navbar-product--icons-item">
                     <a href="/" className="navbar-product--icons-link">
                       <FontAwesomeIcon icon={["fas", "fa-bag-shopping"]} />
-                      <span className="navbar-product--icons-value">3</span>
+                      <span className="navbar-product--icons-value">
+                        3
+                      </span>
                     </a>
                   </li>
                   <li className="navbar-product--icons-item">
                     <FontAwesomeIcon icon={["fas", "fa-cart-shopping"]} />
-                    <span className="navbar-product--icons-amount">£25.00</span>
+                    <span className="navbar-product--icons-amount">
+                      £25.00
+                    </span>
                   </li>
                 </ul>
               </div>
