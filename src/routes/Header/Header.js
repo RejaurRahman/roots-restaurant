@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faBars, faBagShopping, faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faBagShopping, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Logo from "../../assets/images/logo.png"
@@ -13,7 +13,6 @@ library.add(
   fab,
   faBagShopping,
   faBars,
-  faCartShopping,
   faUser,
 )
 
@@ -64,7 +63,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg sticky-top">
         <div className="container navbar--container">
           <div className="row navbar--row">
-            <div className="col-12 col-lg-7 navbar--left">
+            <div className="col-12 col-lg-11 navbar--left">
               <Link className="navbar-brand" to="/">
                 <img src={Logo} alt="Roots Restaurant" className="navbar-logo" />
               </Link>
@@ -73,8 +72,8 @@ const Header = () => {
                   <FontAwesomeIcon icon={["fas", "fa-bars"]} size="2x" />
                 </span>
               </button>
-              <div className="collapse navbar-collapse" id="headerNav">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <div className="collapse navbar-collapse offset-lg-1" id="headerNav">
+                <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li className="nav-item">
                     <Link className="nav-link active" aria-current="page" to="/">
                       Home
@@ -160,22 +159,16 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-12 col-lg-5 navbar--right">
+            <div className="col-12 col-lg-1 navbar--right">
               <div className="navbar-product--icons">
                 <ul className="navbar-product--icons-list">
                   <li className="navbar-product--icons-item">
                     <Link className="navbar-product--icons-link" to="/">
-                      <FontAwesomeIcon icon={["fas", "fa-bag-shopping"]} />
+                      <FontAwesomeIcon icon={["fas", "fa-bag-shopping"]} size="2x" />
                       <span className="navbar-product--icons-value">
                         3
                       </span>
                     </Link>
-                  </li>
-                  <li className="navbar-product--icons-item">
-                    <FontAwesomeIcon icon={["fas", "fa-cart-shopping"]} />
-                    <span className="navbar-product--icons-amount">
-                      £25.00
-                    </span>
                   </li>
                 </ul>
               </div>
