@@ -1,3 +1,11 @@
+.navbar-collapse.show {
+  position: absolute;
+  width: 100vw;
+  top: 71px;
+  left: 0;
+  background-color: #fff;
+}
+
 .nav-link {
   &.navbar--link {
     color: #088972;
@@ -20,7 +28,9 @@
       color: #088972;
 
       &::before {
-        opacity: 1;
+        @media screen and (min-width: 992px) {
+          opacity: 1;
+        }
       }
     }
 

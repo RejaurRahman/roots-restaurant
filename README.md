@@ -9,6 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Header dropdown - full width style desktop
 - Homepage Image Banner slider
 - Product Homepage slider
+- Navigation Modal
+- Remove Socials from Header from DOM on Mobile
 
 ## Node Version
 
