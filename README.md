@@ -9,8 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Header dropdown
 - Homepage Image Banner slider
 - Product Homepage slider
-- Top right navigation cart section
-- Hover transition existing regions
+- Header styles
 
 ## Node Version
 

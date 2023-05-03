@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faBars, faBagShopping, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faBagShopping } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Logo from "../../assets/images/logo.png"
@@ -13,7 +13,6 @@ library.add(
   fab,
   faBagShopping,
   faBars,
-  faUser,
 )
 
 const Header = () => {
