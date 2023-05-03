@@ -62,7 +62,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg sticky-top">
         <div className="container navbar--container">
           <div className="row navbar--row">
-            <div className="col-12 col-lg-11 navbar--left">
+            <div className="col-6 col-lg-11 navbar--left">
               <Link className="navbar-brand" to="/">
                 <img src={Logo} alt="Roots Restaurant" className="navbar-logo" />
               </Link>
@@ -158,7 +158,7 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-12 col-lg-1 navbar--right">
+            <div className="col-6 col-lg-1 navbar--right">
               <div className="navbar-product--icons">
                 <ul className="navbar-product--icons-list">
                   <li className="navbar-product--icons-item">
