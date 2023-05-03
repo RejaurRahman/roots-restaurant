@@ -61,8 +61,10 @@
 
 .dropdown-toggle {
   &::after {
-    position: absolute;
-    left: calc(100% - 12px);
+    @media screen and (max-width: 991px) {
+      position: absolute;
+      left: calc(100% - 12px);
+    }
 
     @media screen and (min-width: 992px) {
       position: relative;
