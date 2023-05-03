@@ -74,16 +74,16 @@ const Header = () => {
               <div className="collapse navbar-collapse offset-lg-1" id="headerNav">
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" to="/">
+                    <Link className="nav-link navbar--link active mx-lg-3" aria-current="page" to="/">
                       Home
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <Link className="nav-link navbar--link mx-lg-3" to="/">
                       About
                     </Link>
                   </li>
-                  <li className="nav-item dropdown">
+                  <li className="nav-item dropdown mx-lg-2">
                     <div className="btn-group">
                       <a className="btn" href="/">
                         Shop
@@ -146,12 +146,12 @@ const Header = () => {
                     </div>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <Link className="nav-link navbar--link mx-lg-3" to="/">
                       Media
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <Link className="nav-link navbar--link mx-lg-3" to="/">
                       Contact
                     </Link>
                   </li>

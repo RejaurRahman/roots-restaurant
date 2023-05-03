@@ -6,10 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Footer Links set active class dynamically
 - Active class set on Header navigation
-- Header dropdown
+- Header dropdown - full width style desktop
 - Homepage Image Banner slider
 - Product Homepage slider
-- Header styles
 
 ## Node Version
 
