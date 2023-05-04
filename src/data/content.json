@@ -1,4 +1,82 @@
 {
+  "header_links": [
+    {
+      "text": "Home",
+      "href": "/",
+      "order": 1
+    },
+    {
+      "text": "About",
+      "href": "/about",
+      "order": 2
+    },
+    {
+      "text": "Shop",
+      "dropdown": true,
+      "dropdown_items": [
+        {
+          "text": "Soup",
+          "href": "/shop/soup",
+          "order": 1
+        },
+        {
+          "text": "Dessert",
+          "href": "/shop/dessert",
+          "order": 2
+        },
+        {
+          "text": "Italian",
+          "href": "/shop/italian",
+          "order": 3
+        },
+        {
+          "text": "Indian",
+          "href": "/shop/indian",
+          "order": 4
+        },
+        {
+          "text": "Oriental",
+          "href": "/shop/oriental",
+          "order": 5
+        },
+        {
+          "text": "Fast Food",
+          "href": "/shop/fast-food",
+          "order": 6
+        },
+        {
+          "text": "Drinks",
+          "href": "/shop/drinks",
+          "order": 7
+        },
+        {
+          "text": "Salad",
+          "href": "/shop/salad",
+          "order": 8
+        },
+        {
+          "divider": true,
+          "order": 9
+        },
+        {
+          "text": "View All",
+          "href": "/shop/all",
+          "order": 10
+        }
+      ],
+      "order": 3
+    },
+    {
+      "text": "Media",
+      "href": "/media",
+      "order": 4
+    },
+    {
+      "text": "Contact",
+      "href": "/contact",
+      "order": 5
+    }
+  ],
   "business_details": {
     "address": {
       "street": "254 Brampton Road",
