@@ -12,6 +12,7 @@ import HeaderSocial from "./HeaderSocial/HeaderSocial"
 import HeaderLinks from "./HeaderLinks/HeaderLinks"
 import HeaderMenu from "./HeaderMenu/HeaderMenu"
 import HeaderCart from "./HeaderCart/HeaderCart"
+import useScreenWidth from "../../hook/useScreenWidth"
 
 library.add(
   fab,
@@ -20,6 +21,8 @@ library.add(
 )
 
 const Header = () => {
+  const isDesktop = useScreenWidth(992)
+
   return (
     <>
       <div className="top-header">
@@ -31,7 +34,9 @@ const Header = () => {
               </span>
             </div>
             <div className="col-6 top-header--right-column">
-              <HeaderSocial />
+              {isDesktop && (
+                <HeaderSocial />
+              )}
               <HeaderLinks />
             </div>
           </div>
@@ -50,7 +55,9 @@ const Header = () => {
                   <FontAwesomeIcon icon={["fas", "fa-bars"]} size="2x" />
                 </span>
               </button>
-              <HeaderMenu />
+              {isDesktop && (
+                <HeaderMenu />
+              )}
             </div>
             <HeaderCart />
           </div>

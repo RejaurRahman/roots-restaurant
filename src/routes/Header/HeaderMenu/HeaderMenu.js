@@ -2,6 +2,8 @@ import React from "react"
 import { Link, useLocation } from "react-router-dom"
 import "./HeaderMenu.styles.scss"
 import data from "../../../data/content.json"
+import useScreenWidth from "../../../hook/useScreenWidth"
+import HeaderSocial from "../HeaderSocial/HeaderSocial"
 
 const HeaderMenu = () => {
   const location = useLocation()
@@ -9,6 +11,8 @@ const HeaderMenu = () => {
   const isActive = (to) => {
     return to === location.pathname
   }
+
+  const isDesktop = useScreenWidth(992)
 
   return (
     <>
@@ -59,6 +63,9 @@ const HeaderMenu = () => {
             </li>
           ))}
         </ul>
+        {isDesktop && (
+          <HeaderSocial />
+        )}
       </div>
     </>
   )
