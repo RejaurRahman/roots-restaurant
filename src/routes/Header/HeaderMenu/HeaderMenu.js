@@ -16,8 +16,12 @@ const HeaderMenu = () => {
 
   return (
     <>
-      <div className="collapse navbar-collapse offset-lg-1">
-        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+      <div
+        className={`navbar-collapse offset-lg-1 ${isDesktop ? "collapse" : ""}`.trim()}
+      >
+        <ul
+          className={`navbar-nav mx-auto mb-lg-0 ${isDesktop ? "mb-2" : ""}`.trim()}
+        >
           {data.header_links.map((link) => (
             <li className="nav-item" key={link.text}>
               {link.dropdown ? (

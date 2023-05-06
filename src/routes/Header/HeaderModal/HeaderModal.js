@@ -2,6 +2,7 @@ import React from "react"
 import { createPortal } from "react-dom"
 
 import "./HeaderModal.styles.scss"
+import HeaderMenu from "../HeaderMenu/HeaderMenu"
 
 const HeaderModal = ({ showModal, closeModal, scrollPosition }) => {
   return (
@@ -15,7 +16,7 @@ const HeaderModal = ({ showModal, closeModal, scrollPosition }) => {
       >
         <div className={`modal-dialog ${scrollPosition > 46 ? "scrolled" : ""}`.trim()}>
           <div className="modal-content">
-            test
+            <HeaderMenu />
           </div>
         </div>
       </div>,
