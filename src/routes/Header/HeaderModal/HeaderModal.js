@@ -16,7 +16,7 @@ const HeaderModal = ({ showModal, closeModal, scrollPosition }) => {
       >
         <div className={`modal-dialog ${scrollPosition > 46 ? "scrolled" : ""}`.trim()}>
           <div className="modal-content">
-            <HeaderMenu />
+            <HeaderMenu showModal={showModal} />
           </div>
         </div>
       </div>,

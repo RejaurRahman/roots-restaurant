@@ -5,7 +5,7 @@ import data from "../../../data/content.json"
 import useScreenWidth from "../../../hook/useScreenWidth"
 import HeaderSocial from "../HeaderSocial/HeaderSocial"
 
-const HeaderMenu = () => {
+const HeaderMenu = ({ showModal }) => {
   const location = useLocation()
 
   const isActive = (to) => {
@@ -17,8 +17,7 @@ const HeaderMenu = () => {
   return (
     <>
       <div
-        className={`navbar-collapse offset-lg-1 ${isDesktop ? "collapse" : ""}`.trim()}
-      >
+        className={`navbar-collapse offset-lg-2 ${!showModal ? "collapse" : ""}`.trim()}>
         <ul
           className={`navbar-nav mx-auto mb-lg-0 ${isDesktop ? "mb-2" : ""}`.trim()}
         >
