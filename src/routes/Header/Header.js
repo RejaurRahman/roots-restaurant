@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Outlet, Link } from "react-router-dom"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -11,6 +11,7 @@ import "./Header.styles.scss"
 import HeaderSocial from "./HeaderSocial/HeaderSocial"
 import HeaderLinks from "./HeaderLinks/HeaderLinks"
 import HeaderMenu from "./HeaderMenu/HeaderMenu"
+import HeaderModal from "./HeaderModal/HeaderModal"
 import HeaderCart from "./HeaderCart/HeaderCart"
 import useScreenWidth from "../../hook/useScreenWidth"
 
@@ -22,6 +23,16 @@ library.add(
 
 const Header = () => {
   const isDesktop = useScreenWidth(992)
+
+  const [showModal, setShowModal] = useState(false)
+
+  const toggleModal = () => {
+    setShowModal(!showModal)
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
+  }
 
   return (
     <>
@@ -50,11 +61,12 @@ const Header = () => {
               <Link className="navbar-brand" to="/">
                 <img src={Logo} alt="Roots Restaurant" className="navbar-logo" />
               </Link>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button className="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleModal}>
                 <span className="navbar-toggler-icon">
                   <FontAwesomeIcon icon={["fas", "fa-bars"]} size="2x" />
                 </span>
               </button>
+              <HeaderModal showModal={showModal} closeModal={closeModal} />
               {isDesktop && (
                 <HeaderMenu />
               )}

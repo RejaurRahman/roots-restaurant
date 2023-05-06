@@ -12,6 +12,10 @@
   padding: 0;
   background-color: #fff;
 
+  &.sticky-top {
+    z-index: 1056;
+  }
+
   .navbar-brand {
     @media screen and (max-width: 991px) {
       margin-right: 0;
@@ -67,7 +71,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 1056;
 }
 
 .top-header--shipping {
@@ -119,6 +123,22 @@
   width: auto;
   height: auto;
   color: #088972;
+}
+
+.modal {
+  opacity: 0;
+  background-color: transparent;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &.show {
+    opacity: 1;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
 }
 
 @keyframes userButtonTrigger {

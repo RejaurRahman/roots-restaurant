@@ -16,7 +16,7 @@ const HeaderMenu = () => {
 
   return (
     <>
-      <div className="collapse navbar-collapse offset-lg-1" id="headerNav">
+      <div className="collapse navbar-collapse offset-lg-1">
         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
           {data.header_links.map((link) => (
             <li className="nav-item" key={link.text}>

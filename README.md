@@ -9,7 +9,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Homepage Image Banner Slider
 - Product Homepage Slider
 - Navigation Modal
-- Remove IDs from Header
 
 ## Node Version
 
