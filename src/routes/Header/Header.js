@@ -1,11 +1,6 @@
 import React, { useState } from "react"
 import { Outlet, Link } from "react-router-dom"
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faBars, faBagShopping } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
 import Logo from "../../assets/images/logo.png"
 import "./Header.styles.scss"
 import HeaderSocial from "./HeaderSocial/HeaderSocial"
@@ -15,24 +10,33 @@ import HeaderModal from "./HeaderModal/HeaderModal"
 import HeaderCart from "./HeaderCart/HeaderCart"
 import useScreenWidth from "../../hook/useScreenWidth"
 
-library.add(
-  fab,
-  faBagShopping,
-  faBars,
-)
-
 const Header = () => {
   const isDesktop = useScreenWidth(992)
-
+  const [scrollPosition, setScrollPosition] = useState(0)
   const [showModal, setShowModal] = useState(false)
 
   const toggleModal = () => {
     setShowModal(!showModal)
+
+    if (!showModal) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
   }
 
   const closeModal = () => {
     setShowModal(false)
+
+    document.body.style.overflow = "auto"
   }
+
+  const handleScroll = () => {
+    const currentPosition = window.pageYOffset
+    setScrollPosition(currentPosition)
+  }
+
+  window.addEventListener("scroll", handleScroll)
 
   return (
     <>
@@ -61,13 +65,23 @@ const Header = () => {
               <Link className="navbar-brand" to="/">
                 <img src={Logo} alt="Roots Restaurant" className="navbar-logo" />
               </Link>
-              <button className="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleModal}>
+              <button
+                className={`navbar-toggler ${showModal ? "open" : "closed"}`}
+                type="button"
+                aria-label="Toggle navigation"
+                onClick={toggleModal}
+              >
                 <span className="navbar-toggler-icon">
-                  <FontAwesomeIcon icon={["fas", "fa-bars"]} size="2x" />
+                  <div className="hamburger-icon" />
                 </span>
               </button>
-              <HeaderModal showModal={showModal} closeModal={closeModal} />
-              {isDesktop && (
+              {showModal && !isDesktop ? (
+                <HeaderModal
+                  showModal={showModal}
+                  closeModal={closeModal}
+                  scrollPosition={scrollPosition}
+                />
+              ) : (
                 <HeaderMenu />
               )}
             </div>

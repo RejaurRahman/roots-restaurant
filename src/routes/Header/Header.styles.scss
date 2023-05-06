@@ -44,16 +44,65 @@
     padding: 0;
     background-color: transparent;
     border: none;
+    position: relative;
+    top: 24px;
+    height: 30px;
 
     &:focus {
-      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+      box-shadow: none;
+    }
+
+    &.open {
+      .hamburger-icon {
+        background-color: transparent;
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
 
   .navbar-toggler-icon {
     background-image: none;
-    width: auto;
-    height: auto;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+.hamburger-icon {
+  display: block;
+  position: relative;
+  background-color: #088972;
+  width: 90%;
+  height: 4px;
+  transition: 0.3s;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #088972;
+    width: 100%;
+    height: 4px;
+    transition: 0.3s;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
   }
 }
 
@@ -123,22 +172,6 @@
   width: auto;
   height: auto;
   color: #088972;
-}
-
-.modal {
-  opacity: 0;
-  background-color: transparent;
-  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
-  &.show {
-    opacity: 1;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .modal-content {
-    border-radius: 0;
-  }
 }
 
 @keyframes userButtonTrigger {
