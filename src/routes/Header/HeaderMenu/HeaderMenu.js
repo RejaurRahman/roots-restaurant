@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import "./HeaderMenu.styles.scss"
 import data from "../../../data/content.json"
@@ -14,6 +14,28 @@ const HeaderMenu = ({ showModal }) => {
 
   const isDesktop = useScreenWidth(992)
 
+  const [dropdownVisible, setDropdownVisible] = useState(false)
+  const [dropdownClicked, setDropdownClicked] = useState(false)
+
+  const handleDropdownHover = () => {
+    if (isDesktop) {
+      setDropdownVisible(true)
+    }
+  }
+
+  const handleDropdownLeave = () => {
+    if (isDesktop) {
+      setDropdownVisible(false)
+    }
+  }
+
+  const handleDropdownClick = (e) => {
+    if (!isDesktop) {
+      e.stopPropagation()
+      setDropdownClicked(!dropdownClicked)
+    }
+  }
+
   return (
     <>
       <div
@@ -24,31 +46,31 @@ const HeaderMenu = ({ showModal }) => {
           {data.header_links.map((link) => (
             <li className="nav-item" key={link.text}>
               {link.dropdown ? (
-                <div className="btn-group">
+                <div
+                  className={`btn-group ${dropdownVisible ? "show" : ""}`.trim()}
+                  onMouseOver={isDesktop ? handleDropdownHover : null}
+                  onMouseLeave={isDesktop ? handleDropdownLeave : null}
+                >
                   <a className="btn" href={link.href}>
                     {link.text}
                   </a>
-                  <a
-                    href="/"
+                  <button
                     className="btn dropdown-toggle dropdown-toggle-split"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    onClick={!isDesktop ? handleDropdownClick : null}
                   >
                     <span className="visually-hidden">
                       Toggle Dropdown
                     </span>
-                  </a>
-                  <ul className="dropdown-menu">
+                  </button>
+                  <ul
+                    className={`dropdown-menu ${isDesktop ? "container" : ""} ${dropdownVisible || dropdownClicked ? "show" : ""}`.trim()}
+                  >
                     {link.dropdown_items.map((item) =>
-                      item.divider ? (
-                        <li key={item.order} className="dropdown-divider" />
-                      ) : (
-                        <li key={item.text}>
-                          <Link className="dropdown-item" to={item.href}>
-                            {item.text}
-                          </Link>
-                        </li>
-                      )
+                      <li key={item.text}>
+                        <Link className="dropdown-item" to={item.href}>
+                          {item.text}
+                        </Link>
+                      </li>
                     )}
                   </ul>
                 </div>

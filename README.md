@@ -5,10 +5,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tasks to do
 
 - Footer Links set active class dynamically
-- Header dropdown - full width style desktop
+- Header dropdown content
 - Homepage Image Banner Slider
 - Product Homepage Slider
-- Navigation Modal
+- Navigation Modal overlay closing
+- Navigation Modal height on mobile view
+- Header Dropdown mobile accordion
 
 ## Node Version
 

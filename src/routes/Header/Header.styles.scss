@@ -9,10 +9,13 @@
 }
 
 .navbar {
-  padding: 0;
   background-color: #fff;
 
   &.sticky-top {
+    @media screen and (min-width: 992px) {
+      padding: 0;
+    }
+
     z-index: 1056;
   }
 
@@ -28,6 +31,10 @@
     @media screen and (min-width: 992px) {
       padding: 5px 0;
     }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
