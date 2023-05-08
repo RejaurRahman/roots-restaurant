@@ -5,7 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tasks to do
 
 - Footer Links set active class dynamically
-- Header dropdown content
 - Homepage Image Banner Slider
 - Product Homepage Slider
 - Navigation Modal overlay closing

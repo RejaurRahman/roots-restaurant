@@ -1,0 +1,291 @@
+Soup
+--------
+1. Celery and Potato Soup
+--------
+- soup-1.jpg
+- Vegan and Veg
+
+- Celery
+- Potato
+- Corriander
+- Garlic
+
+2. Creamy Roasted Pumpkin Soup
+--------
+- Veg
+- soup-2.jpg
+
+- Pumpkin
+- Pomegrante
+- Coconut Milk
+
+3. Chicken Broth With Vegetables
+--------
+- soup-3.jpg
+
+- Chicken
+- Carrot
+- Green Pea
+
+4. Tomato Gazpacho Soup
+--------
+- Vegan and Veg
+- soup-4.jpg
+
+- Tomato
+- Basil
+
+5. Carrot and Ginger Soup
+--------
+- Vegan and Veg
+- soup-5.jpg
+
+- Carrot
+- Ginger
+
+Pizza
+--------
+1. Margherita
+--------
+- Veg
+- pizza-1.jpg
+
+- Basil
+- Mozarella
+
+2. Shrimp and Olive
+--------
+- pizza-2.jpg
+
+- Shrimp
+- Olive
+
+3. Tomato and Mushroom Pizza
+--------
+- pizza-3.jpg
+
+4. Vegan Delite Pizza
+--------
+- pizza-4.jpg
+
+- Sweet Corn
+- Aspragahus
+- Spinach
+
+Pasta
+--------
+1. Tagliatelle
+--------
+- Veg
+- pasta-1.jpg
+
+- Cherry Tomato
+
+2. Eggplant Cannelloni
+--------
+- Vegan and Veg
+- pasta-2.jpg
+
+- Eggplant
+- Corriander
+- Tomato
+
+3. Potato Gnocchi
+--------
+- pasta-3.jpg
+
+- Chicken
+- Spinanch
+- Potato
+- Tomato
+
+4. Seafood and Vegetable Couscous
+--------
+- pasta-4.jpg
+
+- Couscous
+- Shrimp
+- Cobbler
+- Fish
+- Lime
+- Corriander
+- Pepper
+
+5. Spaghetti Shrimp
+--------
+- pasta-5.jpg
+
+- Shrimp
+- Corriander
+- Tomato
+
+6. Farfalle Pesto
+--------
+- Vegan and Veg
+- pasta-6.jpg
+
+- Pesto
+- Cherry Tomatoes
+
+7. Tofu Pasta
+--------
+- Vegan and Veg
+- pasta-7.jpg
+
+- Tofu
+- Pepper
+- Coriander
+
+Curry
+--------
+1. Paneer Butter Masala
+--------
+- curry-1.jpg
+
+- Paneer
+- Coconut Milk
+
+2. Butter Chicken
+--------
+- curry-2.jpg
+
+3. Cauliflower Manchurian
+--------
+- curry-3.jpg
+
+4. Lentil Curry
+--------
+- curry-4.jpg
+
+5. Potato and Pumpkin Curry
+--------
+- Vegan and Veg
+- curry-5.jpg
+
+- Pumpkin
+- Potato
+- pepper
+- Cashew Nuts
+- Chopped Tomatoes
+- Mustard Seeds
+- Coconut Milk
+- Corriander
+
+6. Spinach and Paneer Curry
+--------
+- curry-6.jpg
+
+7. Mutton and Potato Curry
+--------
+- curry-7.jpg
+
+Salad
+--------
+1. Shrimp and Feta Cheese Salad
+--------
+- salad-1.jpg
+
+- Shrimp
+- Cherry Tomato
+- Feta Cheese
+
+2. Pumpkin Salad
+--------
+- salad-2.jpg
+
+- Pumpkin
+- Corriander
+- Feta Cheese
+- Pomegrante Seeds
+
+3. Quinoa Avocado Salad
+--------
+- Vegan and Veg
+- salad-3.jpg
+
+- Avocado
+- Radish
+- Sweet Potato
+- Quinoa
+- Corriander
+
+4. Zucchini Salad
+--------
+- Vegan and Veg
+- salad-4.jpg
+
+- Zucchini
+- Feta Cheese
+- Fried Bread Croutons
+- Corriander
+
+5. Vegan Granola
+--------
+- Vegan and Veg
+- salad-5.jpg
+
+- Cream Cheese
+- Avocado
+- Lettuce
+- Persimmon
+- Granola
+
+Drinks
+--------
+1. Watermelon Juice
+--------
+- drinks-1.jpg
+
+- Watermelon
+
+2. Cucumber Lemonade
+--------
+- drinks-2.jpg
+
+- Cucumber
+
+3. Strawberry and Basil Lemonade
+--------
+- drinks-3.jpg
+
+4. Orange Juice
+--------
+- drinks-4.jpg
+
+- Orange
+
+5. Pineapple Juice
+--------
+- drinks-5.jpg
+
+Desert
+--------
+1. Tiramisu
+--------
+- desert-1.jpg
+
+2. Creme Brulee
+--------
+- desert-2.jpg
+
+3. Cinnamon Sticks Cheesecake
+--------
+- desert-3.jpg
+
+4. Exotic Coconut Rice
+--------
+- desert-4.jpg
+
+- Coconut
+- Rice
+- Kidney Beans
+- Mango
+
+5. Chocolate Ganache Tart
+--------
+- desert-5.jpg
+- Vegan
+
+6. Mint Chocolate Ice Cream
+--------
+- desert-6.jpg
