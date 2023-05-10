@@ -66,12 +66,12 @@ const HeaderMenu = ({ showModal }) => {
                     className={`dropdown-menu ${isDesktop ? "container" : ""} ${dropdownVisible || dropdownClicked ? "show" : ""}`.trim()}
                   >
                     {link.dropdown_items.map((item) => (
-                      <li key={item.text}>
-                        <span className="dropdown_items">{item.text}</span>
-                        <ul>
+                      <li className="dropdown-parent-list" key={item.text}>
+                        <span className="dropdown-category">{item.text}</span>
+                        <ul className="dropdown-list">
                           {item.items.map((nestedItem) => (
-                            <li key={nestedItem.text}>
-                              <Link className="dropdown_item" to={nestedItem.href}>
+                            <li className="dropdown-item" key={nestedItem.text}>
+                              <Link className="dropdown-link" to={nestedItem.href}>
                                 {nestedItem.text}
                               </Link>
                             </li>
