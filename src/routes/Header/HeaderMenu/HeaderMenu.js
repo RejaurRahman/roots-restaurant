@@ -65,13 +65,20 @@ const HeaderMenu = ({ showModal }) => {
                   <ul
                     className={`dropdown-menu ${isDesktop ? "container" : ""} ${dropdownVisible || dropdownClicked ? "show" : ""}`.trim()}
                   >
-                    {link.dropdown_items.map((item) =>
+                    {link.dropdown_items.map((item) => (
                       <li key={item.text}>
-                        <Link className="dropdown-item" to={item.href}>
-                          {item.text}
-                        </Link>
+                        <span className="dropdown_items">{item.text}</span>
+                        <ul>
+                          {item.items.map((nestedItem) => (
+                            <li key={nestedItem.text}>
+                              <Link className="dropdown_item" to={nestedItem.href}>
+                                {nestedItem.text}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
                       </li>
-                    )}
+                    ))}
                   </ul>
                 </div>
               ) : (

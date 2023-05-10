@@ -11,6 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Navigation Modal height on mobile view
 - Header Dropdown mobile accordion
 - Category List - Slider on mobile
+- Assets file size reduced
 
 ## Node Version
 
