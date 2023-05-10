@@ -4,14 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Tasks to do
 
-- Footer Links set active class dynamically
-- Homepage Image Banner Slider
-- Product Homepage Slider
-- Navigation Modal overlay closing
-- Navigation Modal height on mobile view
-- Header Dropdown mobile accordion
-- Category List - Slider on mobile
-- Assets file size reduced
+1. Footer Links set active class dynamically
+2. Homepage Image Banner Slider
+3. Product Homepage Slider
+4. Navigation Modal overlay closing
+5. Navigation Modal height on mobile view
+6. Header Dropdown mobile accordion
+7. Category List - Slider on mobile
+8. Lazyloading images
 
 ## Node Version
 
