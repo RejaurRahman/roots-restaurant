@@ -7,11 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. Footer Links set active class dynamically
 2. Homepage Image Banner Slider
 3. Product Homepage Slider
-4. Navigation Modal overlay closing
-5. Navigation Modal height on mobile view
-6. Header Dropdown mobile accordion
-7. Category List - Slider on mobile
-8. Lazyloading images
+4. Navigation Modal height on mobile view
+5. Header Dropdown mobile accordion
+6. Category List - Slider on mobile
+7. Lazyloading images
+8. Header dropdown animation
+9. Dropdown active with Shop
 
 ## Node Version
 
