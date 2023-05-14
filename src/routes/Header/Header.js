@@ -66,7 +66,7 @@ const Header = () => {
                 <img src={Logo} alt="Roots Restaurant" className="navbar-logo" />
               </Link>
               <button
-                className={`navbar-toggler ${showModal ? "open" : "closed"}`}
+                className={`navbar-toggler ${showModal ? "open" : "closed"}`.trim()}
                 type="button"
                 aria-label="Toggle navigation"
                 onClick={toggleModal}

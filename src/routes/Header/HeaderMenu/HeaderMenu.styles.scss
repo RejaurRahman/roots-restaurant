@@ -170,6 +170,14 @@
   }
 }
 
+.accordion-container {
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 12px;
+  }
+}
+
 .dropdown-parent-list {
   padding-bottom: 20px;
 }

@@ -4,6 +4,7 @@ import "./HeaderMenu.styles.scss"
 import data from "../../../data/content.json"
 import useScreenWidth from "../../../hook/useScreenWidth"
 import HeaderSocial from "../HeaderSocial/HeaderSocial"
+import Accordion from "../../../components/Accordion/Accordion"
 
 const HeaderMenu = ({ showModal }) => {
   const location = useLocation()
@@ -65,20 +66,22 @@ const HeaderMenu = ({ showModal }) => {
                   <ul
                     className={`dropdown-menu ${isDesktop ? "container" : ""} ${dropdownVisible || dropdownClicked ? "show" : ""}`.trim()}
                   >
-                    {link.dropdown_items.map((item) => (
-                      <li className="dropdown-parent-list" key={item.text}>
-                        <span className="dropdown-category">{item.text}</span>
-                        <ul className="dropdown-list">
-                          {item.items.map((nestedItem) => (
-                            <li className="dropdown-item" key={nestedItem.text}>
-                              <Link className="dropdown-link" to={nestedItem.href}>
-                                {nestedItem.text}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </li>
-                    ))}
+                    <Accordion className={`${isDesktop ? "accordion-container" : ""}`.trim()}>
+                      {link.dropdown_items.map((item) => (
+                        <li className="dropdown-parent-list" key={item.text}>
+                          <span className="dropdown-category">{item.text}</span>
+                          <ul className="dropdown-list">
+                            {item.items.map((nestedItem) => (
+                              <li className="dropdown-item" key={nestedItem.text}>
+                                <Link className="dropdown-link" to={nestedItem.href}>
+                                  {nestedItem.text}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </li>
+                      ))}
+                    </Accordion>
                   </ul>
                 </div>
               ) : (
