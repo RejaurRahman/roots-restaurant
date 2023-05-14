@@ -72,7 +72,15 @@
   }
 
   &:nth-last-child(-n+2) {
-    border-bottom: 0;
+    @media screen and (min-width: 769px) {
+      border-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    @media screen and (max-width: 768px) {
+      border-bottom: 0;
+    }
   }
 
   &::before {
@@ -113,8 +121,8 @@
   .background-image {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     transition: transform 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   }
 

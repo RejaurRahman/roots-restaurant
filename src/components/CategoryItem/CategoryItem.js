@@ -1,15 +1,18 @@
 import "./CategoryItem.styles.scss"
 
+import { LazyLoadImage } from "react-lazy-load-image-component"
+
 const CategoryItem = ({ category }) => {
   const { imageUrl, title } = category
 
   return (
     <div className="category-container">
-      <div
+      <LazyLoadImage
+        src={imageUrl}
+        alt={title}
         className="background-image"
-        style={{
-          backgroundImage: `url(${imageUrl})`
-        }}
+        width={351}
+        height={296}
       />
       <div className="category-body-container">
         <h2>

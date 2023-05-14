@@ -11,6 +11,8 @@ import "./Footer.styles.scss"
 import data from "../../data/content.json"
 import FooterForm from "./FooterForm/FooterForm"
 
+import { LazyLoadImage } from "react-lazy-load-image-component"
+
 library.add(
   faAngleUp,
   fab
@@ -35,10 +37,11 @@ const Footer = () => {
         <div className="row">
           <div className="col-12 col-lg-4">
             <Link className="footer--logo" to="/">
-              <img
+              <LazyLoadImage
                 src={Logo}
                 alt="Roots Restaurant"
-                className="footer--logo-image"
+                width={55}
+                height={55}
               />
             </Link>
             <ul className="footer--address">

@@ -10,9 +10,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. Navigation Modal height on mobile view
 5. Header Dropdown mobile accordion
 6. Category List - Slider on mobile
-7. Lazyloading images
-8. Header dropdown animation
-9. Dropdown active with Shop
+7. Header dropdown animation
+8. Dropdown active with Shop
 
 ## Node Version
 
