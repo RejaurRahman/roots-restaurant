@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react"
 
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+library.add(
+  faChevronDown
+)
+
 const AccordionItem = ({
   accordionMobile,
   accordionNormal,
@@ -61,6 +69,7 @@ const AccordionItem = ({
             onClick={() => handleItemClick(index)}
           >
             {title}
+            <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} />
           </button>
         </div>
       ) : (

@@ -16,9 +16,28 @@
 
 .nav-link {
   &.navbar--link {
+    @media screen and (max-width: 991px) {
+      padding: 12px;
+    }
+
     color: #088972;
     font-weight: bold;
     position: relative;
+
+    &.active {
+      @media screen and (max-width: 991px) {
+        background-color: #088972;
+        color: #fff !important;
+      }
+
+      @media screen and (min-width: 992px) {
+        color: #088972 !important;
+      }
+
+      &::before {
+        opacity: 1;
+      }
+    }
 
     &::before {
       content: "";
@@ -41,14 +60,6 @@
         }
       }
     }
-
-    &.active {
-      color: #088972 !important;
-
-      &::before {
-        opacity: 1;
-      }
-    }
   }
 }
 
@@ -67,7 +78,7 @@
 
     .btn {
       @media screen and (max-width: 991px) {
-        padding: 8px 0;
+        padding: 12px;
         text-align: left;
       }
 
@@ -160,6 +171,10 @@
     }
 
     .dropdown-item {
+      @media screen and (max-width: 991px) {
+        padding: 5px 0;
+      }
+
       padding: 2px 0;
       color: #088972;
 
@@ -185,10 +200,24 @@
 }
 
 .dropdown-parent-list {
-  padding-bottom: 20px;
+  @media screen and (min-width: 992px) {
+    padding-bottom: 20px;
+  }
+
+  &:first-child {
+    .accordion-button {
+      @media screen and (max-width: 991px) {
+        border-top: 1px solid #088972;
+      }
+    }
+  }
 }
 
 .dropdown-list {
+  @media screen and (max-width: 991px) {
+    padding: 12px;
+  }
+
   list-style: none;
   padding-left: 0;
 }
@@ -197,6 +226,33 @@
   color: #088972;
   text-transform: uppercase;
   font-weight: bold;
+
+  &.accordion-button {
+    @media screen and (max-width: 991px) {
+      color: #088972;
+      border-bottom: 1px solid #088972;
+      padding: 12px;
+      justify-content: space-between;
+    }
+
+    &:not(.collapsed) {
+      @media screen and (max-width: 991px) {
+        background-color: #088972;
+        color: #fff;
+      }
+
+      svg {
+        @media screen and (max-width: 991px) {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
 }
 
 .dropdown-link {

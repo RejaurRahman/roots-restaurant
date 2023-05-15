@@ -12,7 +12,6 @@ const HeaderModal = ({ showModal, closeModal, scrollPosition }) => {
         tabIndex="-1"
         aria-labelledby="navigationModalLabel"
         aria-hidden={!showModal}
-        onClick={closeModal}
       >
         <div className={`modal-dialog ${scrollPosition > 46 ? "scrolled" : ""}`.trim()}>
           <div className="modal-content">
