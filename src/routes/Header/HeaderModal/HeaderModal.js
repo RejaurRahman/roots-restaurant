@@ -4,7 +4,7 @@ import { createPortal } from "react-dom"
 import "./HeaderModal.styles.scss"
 import HeaderMenu from "../HeaderMenu/HeaderMenu"
 
-const HeaderModal = ({ showModal, closeModal, scrollPosition }) => {
+const HeaderModal = ({ showModal, scrollPosition }) => {
   return (
     showModal && createPortal(
       <div
