@@ -5,6 +5,7 @@ import data from "../../../data/content.json"
 import useScreenWidth from "../../../hook/useScreenWidth"
 import HeaderSocial from "../HeaderSocial/HeaderSocial"
 import Accordion from "../../../components/Accordion/Accordion"
+import AccordionItem from "../../../components/Accordion/AccordionItem/AccordionItem"
 
 const HeaderMenu = ({ showModal }) => {
   const location = useLocation()
@@ -69,8 +70,14 @@ const HeaderMenu = ({ showModal }) => {
                     <Accordion className={`${isDesktop ? "accordion-container" : ""}`.trim()}>
                       {link.dropdown_items.map((item) => (
                         <li className="dropdown-parent-list" key={item.text}>
-                          <span className="dropdown-category">{item.text}</span>
-                          <ul className="dropdown-list">
+                          <AccordionItem
+                            accordionMobile
+                            buttonClassName="dropdown-category"
+                            contentClassName="dropdown-list"
+                            isList
+                            index
+                            title={item.text}
+                          >
                             {item.items.map((nestedItem) => (
                               <li className="dropdown-item" key={nestedItem.text}>
                                 <Link className="dropdown-link" to={nestedItem.href}>
@@ -78,7 +85,7 @@ const HeaderMenu = ({ showModal }) => {
                                 </Link>
                               </li>
                             ))}
-                          </ul>
+                          </AccordionItem>
                         </li>
                       ))}
                     </Accordion>

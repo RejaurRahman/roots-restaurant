@@ -1,6 +1,8 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 const AccordionItem = ({
+  accordionMobile,
+  accordionNormal,
   buttonClassName,
   contentClassName,
   children,
@@ -9,20 +11,42 @@ const AccordionItem = ({
   title,
 }) => {
   const [activeIndex, setActiveIndex] = useState(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 991)
+    }
+
+    handleResize()
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
 
   const handleItemClick = (index) => {
     setActiveIndex(activeIndex === index ? null : index)
   }
 
+  const isAccordionMobile = accordionMobile && isMobile
+  const isAccordionNormal = accordionNormal && !isMobile
+
   const contentElement = isList ? (
     <ul
-      className={`accordion-collapse collapse ${activeIndex === index ? "show" : ""} ${contentClassName}`.trim()}
+      className={`${isAccordionMobile || isAccordionNormal ? "accordion-collapse collapse" : ""} ${
+        (isAccordionMobile || isAccordionNormal) && activeIndex === index ? "show" : ""
+      } ${contentClassName}`.trim()}
     >
       {children}
     </ul>
   ) : (
     <div
-      className={`accordion-collapse collapse ${activeIndex === index ? "show" : ""} ${contentClassName}`.trim()}
+      className={`${isAccordionMobile || isAccordionNormal ? "accordion-collapse collapse" : ""} ${
+        (isAccordionMobile || isAccordionNormal) && activeIndex === index ? "show" : ""
+      } ${contentClassName}`.trim()}
     >
       {children}
     </div>
@@ -30,12 +54,20 @@ const AccordionItem = ({
 
   return (
     <>
-      <button
-        className={`accordion-button ${buttonClassName}`}
-        onClick={() => handleItemClick(index)}
-      >
-        {title}
-      </button>
+      {isAccordionMobile || isAccordionNormal ? (
+        <div className="accordion-header">
+          <button
+            className={`accordion-button ${activeIndex !== index ? "collapsed" : ""} ${buttonClassName}`.trim()}
+            onClick={() => handleItemClick(index)}
+          >
+            {title}
+          </button>
+        </div>
+      ) : (
+        <span className={buttonClassName}>
+          {title}
+        </span>
+      )}
       {contentElement}
     </>
   )
