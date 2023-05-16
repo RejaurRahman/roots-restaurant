@@ -1,3 +1,5 @@
+import React from "react"
+
 import "./CategoryItem.styles.scss"
 
 import { LazyLoadImage } from "react-lazy-load-image-component"

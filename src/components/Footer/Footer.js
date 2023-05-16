@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
@@ -20,6 +20,7 @@ library.add(
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
+  const location = useLocation()
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -76,7 +77,14 @@ const Footer = () => {
                   .filter(link => link.ul_list === 1)
                   .map((link, index) => (
                     <li key={index}>
-                      <Link className="footer--pages-link" to={link.href}>
+                      <Link
+                        className={`footer--pages-link ${
+                          link.href === location.pathname
+                            ? "footer--pages-link-active"
+                            : ""
+                        }`.trim()}
+                        to={link.href}
+                      >
                         {link.text}
                       </Link>
                     </li>
@@ -88,7 +96,14 @@ const Footer = () => {
                   .filter(link => link.ul_list === 2)
                   .map((link, index) => (
                     <li key={index}>
-                      <Link className="footer--pages-link" to={link.href}>
+                      <Link
+                        className={`footer--pages-link ${
+                          link.href === location.pathname
+                            ? "footer--pages-link-active"
+                            : ""
+                        }`.trim()}
+                        to={link.href}
+                      >
                         {link.text}
                       </Link>
                     </li>

@@ -19,10 +19,10 @@ const MainBanner = () => {
   return (
     <>
       <Swiper
-        // autoplay={{
-        //   delay: 4500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
         className="banner"
         modules={[Autoplay, Pagination]}
         pagination={{
