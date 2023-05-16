@@ -278,6 +278,17 @@
     "open_days": "Monday to Sunday",
     "open_hours": "11:30am - 11:00pm"
   },
+  "main_banner": [
+    {
+      "bannerText": "Let there be seasons so that our tongues will be rich in asparagus and limes."
+    },
+    {
+      "bannerText": "Produced with the finest local ingredients making a reimagination of healthy cuisines with no alchohol content."
+    },
+    {
+      "bannerText": "Fresh and seasonal food with either sweet or spicy flavours added with a modern twist."
+    }
+  ],
   "services_list": [
     {
       "colour": "#7D1B7E",

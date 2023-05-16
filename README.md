@@ -5,11 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tasks to do
 
 1. Footer Links set active class dynamically
-2. Homepage Image Banner Slider
-3. Product Homepage Slider
-4. Category List - Slider on mobile
-5. Header dropdown animation
-6. Dropdown active with Shop
+2. Product Homepage Slider
+3. Category List - Slider on mobile
+4. Header dropdown animation
+5. Dropdown active with Shop
 
 ## Node Version
 
