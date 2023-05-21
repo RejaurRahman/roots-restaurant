@@ -1,8 +1,9 @@
 import React from "react"
 import { createPortal } from "react-dom"
 
+import HeaderMenu from "../HeaderMenu/HeaderMenu.component"
+
 import "./HeaderModal.styles.scss"
-import HeaderMenu from "../HeaderMenu/HeaderMenu"
 
 const HeaderModal = ({ showModal, scrollPosition }) => {
   return (

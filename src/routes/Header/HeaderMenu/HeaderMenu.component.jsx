@@ -4,7 +4,7 @@ import "./HeaderMenu.styles.scss"
 import data from "../../../data/content.json"
 import useScreenWidth from "../../../hook/useScreenWidth"
 import HeaderSocial from "../HeaderSocial/HeaderSocial.component"
-import Accordion from "../../../components/Accordion/Accordion"
+import Accordion from "../../../components/Accordion/Accordion.component"
 import AccordionItem from "../../../components/Accordion/AccordionItem/AccordionItem.component"
 
 const HeaderMenu = ({ showModal }) => {
