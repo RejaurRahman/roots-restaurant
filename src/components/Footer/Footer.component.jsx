@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Logo from "../../assets/images/logo.png"
 import "./Footer.styles.scss"
 import data from "../../data/content.json"
-import FooterForm from "./FooterForm/FooterForm"
+import FooterForm from "./FooterForm/FooterForm.component"
 
 import { LazyLoadImage } from "react-lazy-load-image-component"
 

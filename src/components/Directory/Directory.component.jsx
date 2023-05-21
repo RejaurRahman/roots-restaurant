@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 import { Navigation } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 
-import CategoryItem from "../CategoryItem/CategoryItem"
+import CategoryItem from "../CategoryItem/CategoryItem.component"
 import useScreenWidth from "../../hook/useScreenWidth"
 
 import { library } from "@fortawesome/fontawesome-svg-core"

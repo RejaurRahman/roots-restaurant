@@ -1,6 +1,6 @@
 import React from "react"
 
-import Directory from "../../components/Directory/Directory"
+import Directory from "../../components/Directory/Directory.component"
 import ServicesList from "../../components/ServicesList/ServicesList"
 
 import Curry from "../../assets/images/cover/curry.jpg"
