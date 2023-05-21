@@ -6,10 +6,10 @@ import "./HeaderLinks.styles.scss"
 const HeaderLinks = () => {
   return (
     <>
-      <Link to="/" className="top-header--user-link top-header--login">
+      <Link to="/login" className="top-header--user-link top-header--login">
         <span>Login</span>
       </Link>
-      <Link to="/" className="top-header--user-link top-header--register">
+      <Link to="/register" className="top-header--user-link top-header--register">
         <span>Register</span>
       </Link>
     </>
