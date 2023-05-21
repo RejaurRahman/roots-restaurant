@@ -3,7 +3,8 @@ import {
   getAuth,
   signInWithRedirect,
   signInWithPopup,
-  GoogleAuthProvider
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword
 } from "firebase/auth"
 import {
   getFirestore,
@@ -13,28 +14,34 @@ import {
 } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB2t0BPl426uop7EnLHWsEmISRknFbnM1c",
-  authDomain: "capsone-ecommerce.firebaseapp.com",
-  projectId: "capsone-ecommerce",
-  storageBucket: "capsone-ecommerce.appspot.com",
-  messagingSenderId: "966335920093",
-  appId: "1:966335920093:web:b03af4b318f81f4fb3a834"
+  apiKey: "AIzaSyAhYhEP3e-_yJsqNDUhMJ-jKlZK3z_K3ok",
+  authDomain: "roots-restaurant-db.firebaseapp.com",
+  projectId: "roots-restaurant-db",
+  storageBucket: "roots-restaurant-db.appspot.com",
+  messagingSenderId: "121764942320",
+  appId: "1:121764942320:web:8f3726e1f73d68ff014d35"
 }
 
 const firebaseApp = initializeApp(firebaseConfig)
 
-const provider = new GoogleAuthProvider()
+const googleProvider = new GoogleAuthProvider()
 
-provider.setCustomParameters({
+googleProvider.setCustomParameters({
   prompt: "select_account"
 })
 
 export const auth = getAuth()
-export const signInWithGooglePopup = () => signInWithPopup(auth, provider)
+export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider)
+export const signInWithGoogleRedirect = () => signInWithRedirect(auth, googleProvider)
 
 export const db = getFirestore()
 
-export const createUserDocumentFromAuth = async (userAuth) => {
+export const createUserDocumentFromAuth = async (
+  userAuth,
+  additionalInformation = {}
+) => {
+  if (!userAuth) return
+
   const userDocRef = doc(db, "users", userAuth.uid)
 
   const userSnapshot = await getDoc(userDocRef)
@@ -47,7 +54,8 @@ export const createUserDocumentFromAuth = async (userAuth) => {
       await setDoc(userDocRef, {
         displayName,
         email,
-        createdAt
+        createdAt,
+        ...additionalInformation
       })
     } catch (error) {
       console.log("error creating the user", error.message)
@@ -55,4 +63,10 @@ export const createUserDocumentFromAuth = async (userAuth) => {
   }
 
   return userDocRef
+}
+
+export const createAuthUserWithEmailAndPassword = async (email, password) => {
+  if (!email || !password) return
+
+  createAuthUserWithEmailAndPassword(auth, email, password)
 }
