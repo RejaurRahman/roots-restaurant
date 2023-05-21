@@ -5,9 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tasks to do
 
 1. Product Homepage Slider
-2. Category List - Slider on mobile
-3. Header dropdown animation
-4. Dropdown active with Shop
+2. Header dropdown animation
+3. Dropdown active with Shop
+4. Blog snippet on homepage
 
 ## Node Version
 

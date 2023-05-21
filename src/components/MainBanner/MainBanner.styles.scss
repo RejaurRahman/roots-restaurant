@@ -37,14 +37,7 @@
 }
 
 .swiper-pagination-custom {
-  @media screen and (max-width: 991px) {
-    bottom: 50px;
-  }
-
-  @media screen and (min-width: 992px) {
-    bottom: 80px;
-  }
-
+  bottom: 50px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

@@ -1,8 +1,7 @@
 import React from "react"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 import "./CategoryItem.styles.scss"
-
-import { LazyLoadImage } from "react-lazy-load-image-component"
 
 const CategoryItem = ({ category }) => {
   const { imageUrl, title } = category
@@ -22,7 +21,7 @@ const CategoryItem = ({ category }) => {
         </h2>
         <p>Shop Now</p>
       </div>
-  </div>
+    </div>
   )
 }
 
