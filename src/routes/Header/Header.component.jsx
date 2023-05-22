@@ -1,10 +1,9 @@
-import React, { useContext, useState } from "react"
+import React, { useState } from "react"
 import { Outlet, Link } from "react-router-dom"
 
 import Logo from "../../assets/images/logo.png"
 
 import useScreenWidth from "../../hook/useScreenWidth"
-import { UserContext } from "../../contexts/user.context"
 
 import HeaderSocial from "./HeaderSocial/HeaderSocial.component"
 import HeaderLinks from "./HeaderLinks/HeaderLinks.component"
@@ -18,9 +17,6 @@ const Header = () => {
   const isDesktop = useScreenWidth(992)
   const [scrollPosition, setScrollPosition] = useState(0)
   const [showModal, setShowModal] = useState(false)
-
-  const { currentUser } = useContext(UserContext)
-  console.log(currentUser)
 
   const toggleModal = () => {
     setShowModal(!showModal)
