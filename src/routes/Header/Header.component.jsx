@@ -2,13 +2,15 @@ import React, { useState } from "react"
 import { Outlet, Link } from "react-router-dom"
 
 import Logo from "../../assets/images/logo.png"
-import "./Header.styles.scss"
+
 import HeaderSocial from "./HeaderSocial/HeaderSocial.component"
 import HeaderLinks from "./HeaderLinks/HeaderLinks.component"
 import HeaderMenu from "./HeaderMenu/HeaderMenu.component"
 import HeaderModal from "./HeaderModal/HeaderModal.component"
 import HeaderCart from "./HeaderCart/HeaderCart.component"
 import useScreenWidth from "../../hook/useScreenWidth"
+
+import "./Header.styles.scss"
 
 const Header = () => {
   const isDesktop = useScreenWidth(992)

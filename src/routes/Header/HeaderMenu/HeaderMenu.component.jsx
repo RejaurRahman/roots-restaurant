@@ -1,11 +1,15 @@
 import React, { useState } from "react"
+
 import { Link, useLocation } from "react-router-dom"
-import "./HeaderMenu.styles.scss"
+
 import data from "../../../data/content.json"
 import useScreenWidth from "../../../hook/useScreenWidth"
+
 import HeaderSocial from "../HeaderSocial/HeaderSocial.component"
 import Accordion from "../../../components/Accordion/Accordion.component"
 import AccordionItem from "../../../components/Accordion/AccordionItem/AccordionItem.component"
+
+import "./HeaderMenu.styles.scss"
 
 const HeaderMenu = ({ showModal }) => {
   const location = useLocation()

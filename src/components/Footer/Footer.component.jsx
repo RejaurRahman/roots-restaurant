@@ -1,5 +1,7 @@
 import React from "react"
+
 import { Link, useLocation } from "react-router-dom"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
@@ -7,11 +9,11 @@ import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Logo from "../../assets/images/logo.png"
-import "./Footer.styles.scss"
 import data from "../../data/content.json"
+
 import FooterForm from "./FooterForm/FooterForm.component"
 
-import { LazyLoadImage } from "react-lazy-load-image-component"
+import "./Footer.styles.scss"
 
 library.add(
   faAngleUp,

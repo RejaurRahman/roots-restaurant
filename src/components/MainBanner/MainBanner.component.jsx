@@ -1,16 +1,17 @@
 import React, { useRef } from "react"
+
 import { Autoplay, Pagination } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
-
-import "./MainBanner.styles.scss"
-
-// eslint-disable-next-line import/no-unresolved, import/extensions
-import "swiper/css"
 
 import data from "../../data/content.json"
 import ImageBanner1 from "../../assets/images/home/home-slide-1.jpg"
 import ImageBanner2 from "../../assets/images/home/home-slide-2.jpg"
 import ImageBanner3 from "../../assets/images/home/home-slide-3.jpg"
+
+// eslint-disable-next-line import/no-unresolved, import/extensions
+import "swiper/css"
+
+import "./MainBanner.styles.scss"
 
 const MainBanner = () => {
   const swiperRef = useRef(null)

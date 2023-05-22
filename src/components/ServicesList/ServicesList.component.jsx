@@ -1,10 +1,12 @@
 import React from "react"
+
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faBoxArchive, faRibbon, faTruck, faUserClock } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import "./ServicesList.styles.scss"
 import data from "../../data/content.json"
+
+import "./ServicesList.styles.scss"
 
 library.add(
   faBoxArchive,
