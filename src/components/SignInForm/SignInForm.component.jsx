@@ -21,7 +21,7 @@ const SignInForm = () => {
   const { email, password } = formFields
 
   const resetFormFields = () => {
-    setFormFields(defaultFormFields);
+    setFormFields(defaultFormFields)
   }
 
   const signInWithGoogle = async () => {
@@ -46,7 +46,7 @@ const SignInForm = () => {
   }
 
   return (
-    <div className="sign-up-container">
+    <div className="sign-in-container">
       <h2>Already have an account?</h2>
       <span>Sign in with your email and password</span>
 
@@ -78,7 +78,7 @@ const SignInForm = () => {
             buttonType="google"
             onClick={signInWithGoogle}
           >
-            Google sign in
+            Sign In With Google
           </Button>
         </div>
       </form>

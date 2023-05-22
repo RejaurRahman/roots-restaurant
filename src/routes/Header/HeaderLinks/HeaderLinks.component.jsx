@@ -2,8 +2,8 @@ import React, { useContext } from "react"
 
 import { Link } from "react-router-dom"
 
-import { UserContext } from "../../contexts/user.context"
-import { signOutUser } from "../../utils/firebase/firebase.utils"
+import { UserContext } from "../../../contexts/user.context"
+import { signOutUser } from "../../../utils/firebase/firebase.utils"
 
 import "./HeaderLinks.styles.scss"
 

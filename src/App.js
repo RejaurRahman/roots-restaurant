@@ -6,14 +6,9 @@ import Footer from "./components/Footer/Footer.component"
 import Home from "./routes/Home/Home.component"
 import Authentication from "./routes/Authentication/Authentication.component"
 import Register from "./routes/Register/Register.component"
+import Shop from "./routes/Shop/Shop.component"
 
 import "./styles/styles.scss"
-
-const Shop = () => {
-  return (
-    <div>I am shop page</div>
-  )
-}
 
 const App = () => {
   return (

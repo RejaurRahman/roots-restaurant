@@ -19,7 +19,7 @@ library.add(
   faRightLeft
 )
 
-const Directory = ({categories}) => {
+const Directory = ({ categories }) => {
   const isDesktop = useScreenWidth(992)
   const swiperRef = useRef(null)
 
