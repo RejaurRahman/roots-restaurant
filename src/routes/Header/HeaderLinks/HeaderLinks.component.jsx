@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 
 import { Link } from "react-router-dom"
 
@@ -8,19 +8,14 @@ import { signOutUser } from "../../utils/firebase/firebase.utils"
 import "./HeaderLinks.styles.scss"
 
 const HeaderLinks = () => {
-  const { currentUser, setCurrentUser } = useContext(UserContext)
-
-  const signOutHandler = async () => {
-    await signOutUser()
-    setCurrentUser(null)
-  }
+  const { currentUser } = useContext(UserContext)
 
   return (
     <>
       {currentUser ? (
         <span
           className="top-header--user-link top-header--login"
-          onClick={signOutHandler}
+          onClick={signOutUser}
         >
           {" "}
           Sign Out{" "}
