@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. Header dropdown animation
 3. Dropdown active with Shop
 4. Blog snippet on homepage
-5. Reuse button component everywhere
+5. use button component in footer form
 
 ## Node Version
 
