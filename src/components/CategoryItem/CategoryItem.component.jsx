@@ -1,5 +1,7 @@
 import React from "react"
 
+import Button from "../Button/Button.component"
+
 import { LazyLoadImage } from "react-lazy-load-image-component"
 
 import "./CategoryItem.styles.scss"
@@ -20,7 +22,11 @@ const CategoryItem = ({ category }) => {
         <h2>
           {title}
         </h2>
-        <p>Shop Now</p>
+        <Button
+          buttonType="transparent"
+        >
+          Shop Now
+        </Button>
       </div>
     </div>
   )

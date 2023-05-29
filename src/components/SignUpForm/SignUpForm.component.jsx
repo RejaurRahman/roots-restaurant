@@ -104,6 +104,7 @@ const SignUpForm = () => {
         />
 
         <Button
+          buttonType="primary"
           type="submit"
         >
           Sign Up
