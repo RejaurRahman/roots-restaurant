@@ -31,7 +31,7 @@ const MainBanner = () => {
           clickable: true,
         }}
         onBeforeInit={(swiper) => {
-          swiperRef.current = swiper;
+          swiperRef.current = swiper
         }}
         slidesPerView="auto"
       >

@@ -9,6 +9,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Dropdown active with Shop
 4. Blog snippet on homepage
 5. use button component in footer form
+6. Hello user message in header
+7. Breadcrumbs
+8. Banner
+9. About us page
+10. Contact us page
+11. Register form checkbox
+12. Register form select dropdown
 
 ## Node Version
 

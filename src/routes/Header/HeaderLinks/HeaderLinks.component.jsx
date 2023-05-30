@@ -23,14 +23,14 @@ const HeaderLinks = () => {
       ) : (
         <Link
           className="top-header--user-link top-header--login"
-          to="/auth"
+          to="/login"
         >
           <span>Login</span>
         </Link>
       )}
       {!currentUser && (
         <Link
-          to="/auth"
+          to="/register"
           className="top-header--user-link top-header--register"
         >
           <span>Register</span>

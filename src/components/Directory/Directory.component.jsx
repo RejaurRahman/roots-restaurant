@@ -47,7 +47,7 @@ const Directory = ({ categories }) => {
         nextEl: ".swiper-nav-right-custom",
       }}
       onBeforeInit={(swiper) => {
-        swiperRef.current = swiper;
+        swiperRef.current = swiper
       }}
       {...swiperOptions}
     >
@@ -58,7 +58,7 @@ const Directory = ({ categories }) => {
             onClick={() => swiperRef.current?.slideNext()}
             onKeyDown={(event) => {
               if (event.key === "Enter") {
-                swiperRef.current?.slideNext();
+                swiperRef.current?.slideNext()
               }
             }}
             role="button"

@@ -6,10 +6,9 @@ import {
   signInAuthUserWithEmailAndPassword
 } from "../../utils/firebase/firebase.utils"
 
-import FormInput from "../FormInput/FormInput.component"
+import FormInput from "../Form/FormInput/FormInput.component"
 import Button from "../Button/Button.component"
-
-import "./SignInForm.styles.scss"
+import FormLink from "../Form/FormLink/FormLink.component"
 
 const defaultFormFields = {
   email: "",
@@ -46,10 +45,7 @@ const SignInForm = () => {
   }
 
   return (
-    <div className="sign-in-container">
-      <h2>Already have an account?</h2>
-      <span>Sign in with your email and password</span>
-
+    <>
       <form onSubmit={handleSubmit}>
         <FormInput
           label="Email"
@@ -69,23 +65,26 @@ const SignInForm = () => {
           value={password}
         />
 
-        <div className="buttons-container">
-          <Button
-            buttonType="primary"
-            type="submit"
-          >
-            Sign In
-          </Button>
-          <Button
-            buttonType="google"
-            onClick={signInWithGoogle}
-            type="button"
-          >
-            Sign In With Google
-          </Button>
-        </div>
+        <FormLink
+          url="/"
+          label="Forgot Password"
+        />
+
+        <Button
+          buttonType="secondary"
+          type="submit"
+        >
+          Sign In
+        </Button>
+
+        <Button
+          buttonType="inverted"
+          type="button"
+        >
+          Register An Account
+        </Button>
       </form>
-    </div>
+    </>
   )
 }
 

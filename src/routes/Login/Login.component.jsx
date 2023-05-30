@@ -2,17 +2,17 @@ import React from "react"
 
 import Form from "../../components/Form/Form.component"
 import FormHeading from "../../components/Form/FormHeading/FormHeading.component"
-import SignUpForm from "../../components/SignUpForm/SignUpForm.component"
+import SignInForm from "../../components/SignInForm/SignInForm.component"
 import FormSocial from "../../components/Form/FormSocial/FormSocial.component"
 
-const Register = () => {
+const Login = () => {
   return (
     <Form>
-      <FormHeading>Sign Up With Roots</FormHeading>
-      <FormSocial label="Sign Up" />
-      <SignUpForm />
+      <FormHeading>Log In To Roots</FormHeading>
+      <FormSocial label="Sign In" />
+      <SignInForm />
     </Form>
   )
 }
 
-export default Register
+export default Login

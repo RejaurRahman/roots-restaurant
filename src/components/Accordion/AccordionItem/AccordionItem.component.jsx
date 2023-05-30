@@ -58,7 +58,7 @@ const AccordionItem = ({
     >
       {children}
     </div>
-  );
+  )
 
   return (
     <>

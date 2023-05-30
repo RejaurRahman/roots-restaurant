@@ -1,0 +1,36 @@
+.social-login {
+  position: relative;
+
+  button {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.social-login--text {
+  position: relative;
+  color: #005547;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    border-top: 1px solid #CCC;
+    flex: 1 0 10px;
+  }
+
+  &::before {
+    margin: 0 10px 0 0;
+  }
+
+  &::after {
+    margin: 0 0 0 10px;
+  }
+}
