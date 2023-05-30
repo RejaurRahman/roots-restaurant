@@ -9,16 +9,18 @@ import Register from "./routes/Register/Register.component"
 import Shop from "./routes/Shop/Shop.component"
 
 import "./styles/styles.scss"
+import ForgotPassword from "./routes/ForgotPassword/ForgotPassword.component"
 
 const App = () => {
   return (
     <div className="app">
       <Routes>
         <Route path="/" element={<Header />}>
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route index element={<Home />}  />
-          <Route path="shop" element={<Shop />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="shop" element={<Shop />} />
         </Route>
       </Routes>
       <Footer />

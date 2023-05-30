@@ -2,7 +2,7 @@ import React from "react"
 
 import Form from "../../components/Form/Form.component"
 import FormHeading from "../../components/Form/FormHeading/FormHeading.component"
-import SignInForm from "../../components/SignInForm/SignInForm.component"
+import SignInForm from "../../components/Form/SignInForm/SignInForm.component"
 import FormSocial from "../../components/Form/FormSocial/FormSocial.component"
 
 const Login = () => {

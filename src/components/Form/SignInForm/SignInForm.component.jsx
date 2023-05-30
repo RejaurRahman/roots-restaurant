@@ -4,11 +4,11 @@ import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword
-} from "../../utils/firebase/firebase.utils"
+} from "../../../utils/firebase/firebase.utils"
 
-import FormInput from "../Form/FormInput/FormInput.component"
-import Button from "../Button/Button.component"
-import FormLink from "../Form/FormLink/FormLink.component"
+import FormInput from "../FormInput/FormInput.component"
+import Button from "../../Button/Button.component"
+import FormLink from "../FormLink/FormLink.component"
 
 const defaultFormFields = {
   email: "",
@@ -66,7 +66,7 @@ const SignInForm = () => {
         />
 
         <FormLink
-          url="/"
+          url="/forgot-password"
           label="Forgot Password"
         />
 

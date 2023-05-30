@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 
-import Button from "../Button/Button.component"
-import FormInput from "../Form/FormInput/FormInput.component"
+import Button from "../../Button/Button.component"
+import FormInput from "../FormInput/FormInput.component"
 
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth
-} from "../../utils/firebase/firebase.utils"
-import FormLink from "../Form/FormLink/FormLink.component"
+} from "../../../utils/firebase/firebase.utils"
+import FormLink from "../FormLink/FormLink.component"
 
 const defaultFormFields = {
   displayName: "",
@@ -100,7 +100,7 @@ const SignUpForm = () => {
         />
 
         <FormLink
-          url="/"
+          url="/privacy-policy"
           label="View Privacy Policy"
         />
 
