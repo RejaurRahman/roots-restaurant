@@ -25,7 +25,7 @@ const HeaderLinks = () => {
           className="top-header--user-link top-header--login"
           to="/auth"
         >
-          Login
+          <span>Login</span>
         </Link>
       )}
       <Link to="/auth" className="top-header--user-link top-header--register">

@@ -10,14 +10,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import "./HeaderCart.styles.scss"
 
-library.add(
-  faBagShopping,
-)
+library.add(faBagShopping)
 
 const HeaderCart = () => {
   const { isCartOpen, setIsCartOpen } = useContext(CartContext)
 
-  const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen)
+  const toggleIsCartOpen = () => {
+    setIsCartOpen(!isCartOpen)
+  }
 
   return (
     <div className="col-6 col-lg-1 navbar--right">
@@ -30,9 +30,7 @@ const HeaderCart = () => {
                 3
               </span>
             </div>
-            {isCartOpen && (
-              <HeaderCartDropdown />
-            )}
+            {isCartOpen && <HeaderCartDropdown />}
           </li>
         </ul>
       </div>
