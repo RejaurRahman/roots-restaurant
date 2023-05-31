@@ -66,7 +66,13 @@ const Header = () => {
           <div className="row navbar--row">
             <div className="col-6 col-lg-11 navbar--left">
               <Link className="navbar-brand" to="/">
-                <img src={Logo} alt="Roots Restaurant" className="navbar-logo" />
+                <img
+                  src={Logo}
+                  alt="Roots Restaurant"
+                  className="navbar-logo"
+                  width={55}
+                  height={55}
+                />
               </Link>
               <button
                 className={`navbar-toggler ${showModal ? "open" : "closed"}`.trim()}
