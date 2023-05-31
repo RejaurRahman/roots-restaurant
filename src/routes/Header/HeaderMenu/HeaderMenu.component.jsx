@@ -57,9 +57,9 @@ const HeaderMenu = ({ showModal }) => {
                   onMouseOver={isDesktop ? handleDropdownHover : null}
                   onMouseLeave={isDesktop ? handleDropdownLeave : null}
                 >
-                  <a className="btn" href={link.href}>
+                  <Link className="btn" to={link.href}>
                     {link.text}
-                  </a>
+                  </Link>
                   <button
                     className="btn dropdown-toggle dropdown-toggle-split"
                     onClick={!isDesktop ? handleDropdownClick : null}

@@ -1,5 +1,7 @@
 import React from "react"
 
+import { Link } from "react-router-dom"
+
 import "./Breadcrumbs.styles.scss"
 
 const Breadcrumbs = ({ label, mediaParent, shopParent }) => {
@@ -10,7 +12,7 @@ const Breadcrumbs = ({ label, mediaParent, shopParent }) => {
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               {mediaParent && (
                 <>
@@ -18,7 +20,7 @@ const Breadcrumbs = ({ label, mediaParent, shopParent }) => {
                     class="breadcrumb-item parent"
                     aria-current="page"
                   >
-                    <a href="/media">Media</a>
+                    <Link to="/media">Media</Link>
                   </li>
                   <li
                     class="breadcrumb-item active"
@@ -34,7 +36,7 @@ const Breadcrumbs = ({ label, mediaParent, shopParent }) => {
                     class="breadcrumb-item parent"
                     aria-current="page"
                   >
-                    <a href="/shop">Shop</a>
+                    <Link to="/shop">Shop</Link>
                   </li>
                   <li
                     class="breadcrumb-item active"

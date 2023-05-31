@@ -1,15 +1,17 @@
 import React from "react"
 
+import { Link } from "react-router-dom"
+
 import "./FormLink.styles.scss"
 
 const FormLink = ({ label, url }) => {
   return (
-    <a
+    <Link
       className="form-link"
-      href={url}
+      to={url}
     >
       {label}
-    </a>
+    </Link>
   )
 }
 
