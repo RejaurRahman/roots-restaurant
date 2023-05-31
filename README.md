@@ -10,15 +10,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. Blog snippet on homepage
 5. Use button component in footer form
 6. Hello user message in header
-7. Breadcrumbs
-8. About us page
-9. Contact us page
-10. Register form checkbox
-11. Register form select dropdown
-12. Forgot Password page
-13. Login page
-14. Register page
-15. Add width and height to images
+7. About us page
+8. Contact us page
+9. Register form checkbox
+10. Register form select dropdown
+11. Forgot Password page
+12. Login page
+13. Register page
+14. Add width and height to images
 
 ## Node Version
 
