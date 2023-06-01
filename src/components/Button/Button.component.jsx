@@ -7,6 +7,7 @@ const BUTTON_TYPE_CLASSES = {
   inverted: "inverted",
   primary: "primary",
   secondary: "secondary",
+  tertiary: "tertiary",
   transparent: "transparent"
 }
 

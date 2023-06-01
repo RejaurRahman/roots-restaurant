@@ -32,15 +32,25 @@
     }
   }
 
-  &.secondary {
+  &.secondary,
+  &.tertiary {
     background-color: #005547;
     color: #fff;
     border: 1px solid #005547;
-    width: 100%;
 
     &:hover {
       background-color: #fff;
       color: #005547;
+    }
+  }
+
+  &.secondary {
+    width: 100%;
+  }
+
+  &.tertiary {
+    @media screen and (min-width: 992px) {
+      padding: 0 12px;
     }
   }
 

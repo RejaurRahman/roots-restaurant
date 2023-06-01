@@ -3,16 +3,17 @@ import React from "react"
 import "./FormInput.styles.scss"
 
 const FormInput = ({
+  emailForm,
   label,
-  selectDropdown,
   textarea,
   ...otherProps
 }) => {
   return (
-    <div className="group">
-      {!textarea && !selectDropdown && (
+    <div className={`group ${emailForm ? "emailGroup" : ""}`.trim()}>
+      {!textarea && (
         <input
           className="form-input"
+          aria-label={label}
           {...otherProps}
         />
       )}
@@ -20,6 +21,7 @@ const FormInput = ({
       {textarea && (
         <textarea
           className="form-input"
+          aria-label={label}
           rows="3"
           {...otherProps}
         />

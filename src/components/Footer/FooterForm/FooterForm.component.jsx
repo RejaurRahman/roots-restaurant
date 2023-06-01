@@ -1,9 +1,24 @@
 import React, { useState } from "react"
 
+import FormInput from "../../Form/FormInput/FormInput.component"
+import Button from "../../Button/Button.component"
+
 import "./FooterForm.styles.scss"
+
+const defaultFormFields = {
+  email: ""
+}
 
 const FooterForm = () => {
   const [message, setMessage] = useState(null)
+  const [formFields, setFormFields] = useState(defaultFormFields)
+  const { email } = formFields
+
+  const handleChange = (event) => {
+    const { name, value } = event.target
+
+    setFormFields({ ...formFields, [name]: value })
+  }
 
   const handleFormSubmit = (event) => {
     event.preventDefault()
@@ -30,17 +45,21 @@ const FooterForm = () => {
       )}
       {message?.type !== "success" && (
         <form className="footer--form" onSubmit={handleFormSubmit}>
-          <input
-            className="form-control"
+          <FormInput
+            label="Enter Your Email"
             type="email"
-            name="email"
-            placeholder="Enter Your Email"
-            aria-label="Enter Your Email"
+            onChange={handleChange}
+            emailForm
             required
+            name="email"
+            value={email}
           />
-          <button className="btn" type="submit">
+          <Button
+            buttonType="tertiary"
+            type="submit"
+          >
             Subscribe
-          </button>
+          </Button>
         </form>
       )}
     </>
