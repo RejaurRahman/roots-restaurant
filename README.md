@@ -14,9 +14,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 8. Contact us page
 9. Register form checkbox
 10. Register form select dropdown
-11. Forgot Password page
-12. Login page
-13. Register page
+11. Forgot Password page submittion
+12. Login page submittion
+13. Register page submittion
 14. Add width and height to images
 
 ## Node Version

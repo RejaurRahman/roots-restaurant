@@ -4,14 +4,26 @@ import "./FormInput.styles.scss"
 
 const FormInput = ({
   label,
+  selectDropdown,
+  textarea,
   ...otherProps
 }) => {
   return (
     <div className="group">
-      <input
-        className="form-input"
-        {...otherProps}
-      />
+      {!textarea && !selectDropdown && (
+        <input
+          className="form-input"
+          {...otherProps}
+        />
+      )}
+
+      {textarea && (
+        <textarea
+          className="form-input"
+          rows="3"
+          {...otherProps}
+        />
+      )}
 
       {
         label && (
