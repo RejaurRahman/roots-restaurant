@@ -1,5 +1,5 @@
-.top-header--user-link:link,
-.top-header--user-link:visited {
+.top-header-user-link:link,
+.top-header-user-link:visited {
   color: #fff;
   padding: 11px 25px;
   text-decoration: none;
@@ -18,20 +18,20 @@
   }
 }
 
-.top-header--login:link,
-.top-header--login:visited {
+.top-header-login:link,
+.top-header-login:visited {
   border-left: 1px solid #fff;
 }
 
-.top-header--register:link,
-.top-header--register:visited {
+.top-header-register:link,
+.top-header-register:visited {
   background-color: #005547;
 }
 
-.top-header--login:link,
-.top-header--login:visited,
-.top-header--register:link,
-.top-header--register:visited {
+.top-header-login:link,
+.top-header-login:visited,
+.top-header-register:link,
+.top-header-register:visited {
   @media screen and (max-width: 991px) {
     padding-left: 0;
     padding-right: 0;

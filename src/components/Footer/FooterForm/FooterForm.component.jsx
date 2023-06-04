@@ -39,12 +39,12 @@ const FooterForm = () => {
   return (
     <>
       {message && (
-        <div className={`footer--message ${message.type}`}>
+        <div className={`footer-message ${message.type}`}>
           {message.content}
         </div>
       )}
       {message?.type !== "success" && (
-        <form className="footer--form" onSubmit={handleFormSubmit}>
+        <form className="footer-form" onSubmit={handleFormSubmit}>
           <FormInput
             label="Enter Your Email"
             type="email"

@@ -1,22 +1,22 @@
-.navbar--right {
+.navbar-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.navbar-product--icons {
+.navbar-product-icons {
   @media screen and (min-width: 992px) {
     margin-left: 15px;
   }
 }
 
-.navbar-product--icons-list {
+.navbar-product-icons-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.navbar-product--icons-item {
+.navbar-product-icons-item {
   color: #088972;
   display: inline-block;
   margin-right: 10px;
@@ -26,13 +26,13 @@
   }
 }
 
-.navbar-product--icons-link {
+.navbar-product-icons-link {
   color: #088972;
   position: relative;
   cursor: pointer;
 }
 
-.navbar-product--icons-value {
+.navbar-product-icons-value {
   font-size: 12px;
   margin-top: 5px;
   color: #fff;

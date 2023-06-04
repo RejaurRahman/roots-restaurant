@@ -43,7 +43,7 @@ const ContactForm = () => {
   return (
     <>
       {message && (
-        <div className={`contact--message ${message.type}`}>
+        <div className={`contact-message ${message.type}`}>
           {message.content}
         </div>
       )}

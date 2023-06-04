@@ -28,7 +28,7 @@ const FormSocial = ({ label }) => {
         {label} With FaceBook
       </Button>
 
-      <span class="social-login--text">or {label} with your email:</span>
+      <span class="social-login-text">or {label} with your email:</span>
     </div>
   )
 }

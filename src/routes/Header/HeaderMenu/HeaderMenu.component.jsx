@@ -97,7 +97,7 @@ const HeaderMenu = ({ showModal }) => {
                 </div>
               ) : (
                 <Link
-                  className={`nav-link navbar--link ${
+                  className={`nav-link navbar-link ${
                     isActive(link.href) ? "active" : ""
                   } mx-lg-3`.trim()}
                   aria-current="page"

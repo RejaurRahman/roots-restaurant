@@ -20,13 +20,13 @@ const HeaderCart = () => {
   }
 
   return (
-    <div className="col-6 col-lg-1 navbar--right">
-      <div className="navbar-product--icons">
-        <ul className="navbar-product--icons-list">
-          <li className="navbar-product--icons-item">
-            <div className="navbar-product--icons-link" onClick={toggleIsCartOpen}>
+    <div className="col-6 col-lg-1 navbar-right">
+      <div className="navbar-product-icons">
+        <ul className="navbar-product-icons-list">
+          <li className="navbar-product-icons-item">
+            <div className="navbar-product-icons-link" onClick={toggleIsCartOpen}>
               <FontAwesomeIcon icon={["fas", "fa-bag-shopping"]} size="2x" />
-              <span className="navbar-product--icons-value">
+              <span className="navbar-product-icons-value">
                 3
               </span>
             </div>

@@ -44,14 +44,14 @@ const Header = () => {
   return (
     <>
       <div className="top-header">
-        <div className="container top-header--container">
+        <div className="container top-header-container">
           <div className="row">
-            <div className="col-6 top-header--shipping">
+            <div className="col-6 top-header-shipping">
               <span>
                 Free Shipping on all orders
               </span>
             </div>
-            <div className="col-6 top-header--right-column">
+            <div className="col-6 top-header-right-column">
               {isDesktop && (
                 <HeaderSocial />
               )}
@@ -62,9 +62,9 @@ const Header = () => {
       </div>
 
       <nav className="navbar navbar-expand-lg sticky-top">
-        <div className="container navbar--container">
-          <div className="row navbar--row">
-            <div className="col-6 col-lg-11 navbar--left">
+        <div className="container navbar-container">
+          <div className="row navbar-row">
+            <div className="col-6 col-lg-11 navbar-left">
               <Link className="navbar-brand" to="/">
                 <img
                   src={Logo}

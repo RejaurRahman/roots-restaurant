@@ -1,4 +1,4 @@
-.top-header--social-list {
+.top-header-social-list {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -6,12 +6,12 @@
   align-items: center;
 }
 
-.top-header--social-item {
+.top-header-social-item {
   display: inline-block;
 }
 
-.top-header--social-link:link,
-.top-header--social-link:visited {
+.top-header-social-link:link,
+.top-header-social-link:visited {
   color: #fff;
   text-decoration: none;
   margin-right: 20px;

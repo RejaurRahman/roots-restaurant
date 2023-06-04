@@ -315,6 +315,19 @@
       "text": "24/7 Available"
     }
   ],
+  "founders": {
+    "foundersMainHeading": "We are passionate food lovers",
+    "list": [
+      {
+        "heading": "Danielle Sanchez",
+        "content": "Danielle is passionate almost about every food in every way. He also has a fantastic food pallet to go with to prove his love for food. He Learnt about food from an early age shadowing his mother. Danielle even though he is not a chef, but he is truly a chef's dream on what to put on a plate and food menu. Danielle knows how to pair flavours which most people would not on a plate together."
+      },
+      {
+        "heading": "Nicole Gabbiadini",
+        "content": "Nicole in her early years was a tour guide originating from Las Palmas from Spain. After that she worked on weekends whilst studying at University. One of her best qualities is she can impress guests and customers with her knowledge and passion for food has helped her start with Danielle Roots Restaurant fuelled healthy heaven."
+      }
+    ]
+  },
   "text_medias": [
     {
       "heading": "No Alchohol Needed",

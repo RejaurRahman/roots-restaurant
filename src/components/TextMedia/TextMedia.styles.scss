@@ -9,7 +9,9 @@
     }
 
     .text-media-content {
-      padding-left: 60px;
+      @media screen and (min-width: 992px) {
+        padding-left: 60px;
+      }
 
       &::before {
         left: auto;
@@ -27,7 +29,10 @@
   }
 
   .text-media-content {
-    padding-right: 60px;
+    @media screen and (min-width: 992px) {
+      padding-right: 60px;
+    }
+
     background-color: #088972;
 
     &::before,

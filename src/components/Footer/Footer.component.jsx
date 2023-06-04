@@ -33,13 +33,13 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="footer--backtop" onClick={handleScrollToTop}>
+      <div className="footer-backtop" onClick={handleScrollToTop}>
         <FontAwesomeIcon icon={["fas", "fa-angle-up"]} size="2x" />
       </div>
       <div className="container footer-container">
         <div className="row">
           <div className="col-12 col-lg-4">
-            <Link className="footer--logo" to="/">
+            <Link className="footer-logo" to="/">
               <LazyLoadImage
                 src={Logo}
                 alt="Roots Restaurant"
@@ -47,42 +47,42 @@ const Footer = () => {
                 height={55}
               />
             </Link>
-            <ul className="footer--address">
-              <li className="footer--address-item">
+            <ul className="footer-address">
+              <li className="footer-address-item">
                 {data.business_details.address.street}
               </li>
-              <li className="footer--address-item">
+              <li className="footer-address-item">
                 {data.business_details.address.city}
               </li>
-              <li className="footer--address-item">
+              <li className="footer-address-item">
                 {data.business_details.address.state}
               </li>
-              <li className="footer--address-item">
+              <li className="footer-address-item">
                 {data.business_details.address.county}
               </li>
-              <li className="footer--address-item">
+              <li className="footer-address-item">
                 {data.business_details.address.postal_code}
               </li>
-              <li className="footer--address-item">
+              <li className="footer-address-item">
                 {data.business_details.address.email}
               </li>
             </ul>
           </div>
           <div className="col-12 col-lg-4">
-            <h4 className="footer--heading">
+            <h4 className="footer-heading">
               {data.footer_copy.links_heading}
             </h4>
-            <div className="footer--pages">
-              <ul className="footer--pages-list">
+            <div className="footer-pages">
+              <ul className="footer-pages-list">
                 {data.footer_links
                   .sort((a, b) => a.ul_list - b.ul_list || a.order - b.order)
                   .filter(link => link.ul_list === 1)
                   .map((link, index) => (
                     <li key={index}>
                       <Link
-                        className={`footer--pages-link ${
+                        className={`footer-pages-link ${
                           link.href === location.pathname
-                            ? "footer--pages-link-active"
+                            ? "footer-pages-link-active"
                             : ""
                         }`.trim()}
                         to={link.href}
@@ -92,16 +92,16 @@ const Footer = () => {
                     </li>
                   ))}
               </ul>
-              <ul className="footer--pages-list">
+              <ul className="footer-pages-list">
                 {data.footer_links
                   .sort((a, b) => a.ul_list - b.ul_list || a.order - b.order)
                   .filter(link => link.ul_list === 2)
                   .map((link, index) => (
                     <li key={index}>
                       <Link
-                        className={`footer--pages-link ${
+                        className={`footer-pages-link ${
                           link.href === location.pathname
-                            ? "footer--pages-link-active"
+                            ? "footer-pages-link-active"
                             : ""
                         }`.trim()}
                         to={link.href}
@@ -114,52 +114,52 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-12 col-lg-4">
-            <h4 className="footer--heading">
+            <h4 className="footer-heading">
               {data.footer_copy.newsletter_heading}
             </h4>
-            <p className="footer--bodycopy">
+            <p className="footer-body-copy">
               {data.footer_copy.newsletter_copy}
             </p>
             <FooterForm />
-            <ul className="footer--social">
-              <li className="footer--social-list">
-                <a href="https://en-gb.facebook.com/" rel="noreferrer" target="_blank" className="footer--social-link">
+            <ul className="footer-social">
+              <li className="footer-social-list">
+                <a href="https://en-gb.facebook.com/" rel="noreferrer" target="_blank" className="footer-social-link">
                   <FontAwesomeIcon icon={["fab", "fa-facebook-f"]} />
                 </a>
               </li>
-              <li className="footer--social-list">
-                <a href="https://twitter.com/" rel="noreferrer" target="_blank" className="footer--social-link">
+              <li className="footer-social-list">
+                <a href="https://twitter.com/" rel="noreferrer" target="_blank" className="footer-social-link">
                   <FontAwesomeIcon icon={["fab", "fa-twitter"]} />
                 </a>
               </li>
-              <li className="footer--social-list">
-                <a href="https://www.instagram.com/" rel="noreferrer" target="_blank" className="footer--social-link">
+              <li className="footer-social-list">
+                <a href="https://www.instagram.com/" rel="noreferrer" target="_blank" className="footer-social-link">
                   <FontAwesomeIcon icon={["fab", "fa-instagram"]} />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="footer--copyright">
+        <div className="footer-copyright">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <span className="footer--copyright-text">
+              <span className="footer-copyright-text">
                 Copyright &copy; {currentYear}.
                 All rights reserved | Roots Healthy Restaurant
               </span>
             </div>
             <div className="col-12 col-lg-6">
-              <ul className="footer--payment">
-                <li className="footer--payment-list">
+              <ul className="footer-payment">
+                <li className="footer-payment-list">
                   <FontAwesomeIcon icon={["fab", "fa-cc-visa"]} size="2x" />
                 </li>
-                <li className="footer--payment-list">
+                <li className="footer-payment-list">
                   <FontAwesomeIcon icon={["fab", "fa-cc-mastercard"]} size="2x" />
                 </li>
-                <li className="footer--payment-list">
+                <li className="footer-payment-list">
                   <FontAwesomeIcon icon={["fab", "fa-cc-paypal"]} size="2x" />
                 </li>
-                <li className="footer--payment-list">
+                <li className="footer-payment-list">
                   <FontAwesomeIcon icon={["fab", "fa-cc-amex"]} size="2x" />
                 </li>
               </ul>

@@ -14,7 +14,7 @@ const HeaderLinks = () => {
     <>
       {currentUser ? (
         <span
-          className="top-header--user-link top-header--login"
+          className="top-header-user-link top-header-login"
           onClick={signOutUser}
         >
           {" "}
@@ -22,7 +22,7 @@ const HeaderLinks = () => {
         </span>
       ) : (
         <Link
-          className="top-header--user-link top-header--login"
+          className="top-header-user-link top-header-login"
           to="/login"
         >
           <span>Login</span>
@@ -31,7 +31,7 @@ const HeaderLinks = () => {
       {!currentUser && (
         <Link
           to="/register"
-          className="top-header--user-link top-header--register"
+          className="top-header-user-link top-header-register"
         >
           <span>Register</span>
         </Link>
