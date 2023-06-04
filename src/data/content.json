@@ -315,6 +315,23 @@
       "text": "24/7 Available"
     }
   ],
+  "text_medias": [
+    {
+      "heading": "No Alchohol Needed",
+      "content": "At Roots Restaurant we take great pride in providing you alcohol-free food and drinks. You would be surprised but our customers never regret the idea that alcohol is not traced in any food or drink.",
+      "reverseLayout": false
+    },
+    {
+      "heading": "Worldwide Flavours",
+      "content": "It is said that a lot of magnificent flavours can come from nature. This is the reason why whenever we need to come up with a new food our Kitchen team and management squad we try and incorporate the natured flavours across the globe in the recipes.",
+      "reverseLayout": true
+    },
+    {
+      "heading": "Using Best Ingredients For Everything",
+      "content": "At Roots Restaurant we use and break hundreds of eggs and since we care about animal welfare we only use eggs from barn hens which can roam as well as scratch and also spred the wings By doing this, we believe we can show that Roots Restaurant is committed to the promise to only use cage free eggs in all our food to Compassion in World Farming during 2012.",
+      "reverseLayout": false
+    }
+  ],
   "footer_copy": {
     "links_heading": "Useful Links",
     "newsletter_heading": "Join Our Newsletter Now",
