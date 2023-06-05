@@ -10,6 +10,7 @@ import Home from "./routes/Home/Home.component"
 import Login from "./routes/Login/Login.component"
 import Register from "./routes/Register/Register.component"
 import Shop from "./routes/Shop/Shop.component"
+import TermsConditions from "./routes/Documents/TermsConditions.component"
 
 import "./styles/styles.scss"
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/terms-and-conditions" element={<TermsConditions />} />
         </Route>
       </Routes>
       <Footer />

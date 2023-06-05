@@ -13,12 +13,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 7. Login page submittion
 8. Register page submittion
 9. Add width and height to images
-10. Footer pages
-11. Shop page not loading. Getting an error
-12. Cart icon displays dropdown cart desktop, mobile goes to cart page
-13. 404 page
-14. Product card
-15. Product list homepage url
+10. Shop page not loading. Getting an error
+11. Product card
+12. Product list homepage url
+13. Update cart dropdown to go to cart page
+14. Add favicons
+
+## Pages
+
+1. 404
+2. cart-empty
+3. cart
+4. checkout-payment
+5. media
+6. media-single
+7. media-author
+8. media-category
+9. coronavirus-faq
+10. faq
+11. shop
+12. shop-single
+13. privacy-policy
+14. sitemap
+15. sustainability
 
 ## Node Version
 
