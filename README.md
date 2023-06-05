@@ -9,15 +9,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Dropdown active with Shop
 4. Blog snippet on homepage
 5. Hello user message in header
-6. Contact us page
-7. Forgot Password page submittion
-8. Login page submittion
-9. Register page submittion
-10. Add width and height to images
-11. Footer pages
-12. Shop page not loading. Getting an error
-13. cart icon displays dropdown cart desktop, mobile goes to cart page
-14. 404 page
+6. Forgot Password page submittion
+7. Login page submittion
+8. Register page submittion
+9. Add width and height to images
+10. Footer pages
+11. Shop page not loading. Getting an error
+12. cart icon displays dropdown cart desktop, mobile goes to cart page
+13. 404 page
 
 ## Node Version
 
