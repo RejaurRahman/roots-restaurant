@@ -21,7 +21,7 @@ const ServicesList = () => {
       <div className="container">
         <div className="row">
           {data.services_list.map((list, index) => (
-            <div className="col-6 col-lg-3" key={index}>
+            <div className="col-6 col-lg-3 home-services-item" key={index}>
               <div className="home-services-circle" style={{backgroundColor: list.colour}}>
                 <FontAwesomeIcon icon={["fas", `${list.iconName}`]} size="2x" />
               </div>

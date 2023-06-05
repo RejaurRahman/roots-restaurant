@@ -113,6 +113,8 @@ const SignUpForm = () => {
 
         <Button
           buttonType="inverted"
+          linkType
+          href="/login"
           type="button"
         >
           Have an account? Log In

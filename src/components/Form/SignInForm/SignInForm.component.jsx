@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 
 import {
-  signInWithGooglePopup,
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword
 } from "../../../utils/firebase/firebase.utils"
@@ -21,10 +20,6 @@ const SignInForm = () => {
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields)
-  }
-
-  const signInWithGoogle = async () => {
-    await signInWithGooglePopup()
   }
 
   const handleSubmit = async (event) => {
@@ -79,6 +74,8 @@ const SignInForm = () => {
 
         <Button
           buttonType="inverted"
+          linkType
+          href="/register"
           type="button"
         >
           Register An Account

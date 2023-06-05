@@ -14,15 +14,21 @@ const BUTTON_TYPE_CLASSES = {
 const Button = ({
   children,
   buttonType,
+  linkType,
+  externalLink,
   ...otherProps
 }) => {
+  const Element = linkType ? "a" : "button"
+
   return (
-    <button
+    <Element
       className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`}
+      target={externalLink ? "_blank" : null}
+      rel={externalLink ? "noreferrer" : null}
       {...otherProps}
     >
       {children}
-    </button>
+    </Element>
   )
 }
 

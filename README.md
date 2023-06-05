@@ -15,8 +15,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 9. Add width and height to images
 10. Footer pages
 11. Shop page not loading. Getting an error
-12. cart icon displays dropdown cart desktop, mobile goes to cart page
+12. Cart icon displays dropdown cart desktop, mobile goes to cart page
 13. 404 page
+14. Product card
+15. Product list homepage url
 
 ## Node Version
 
