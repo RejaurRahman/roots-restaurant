@@ -10,7 +10,7 @@ const HeaderModal = ({ showModal, scrollPosition }) => {
   return (
     showModal && createPortal(
       <div
-        className={`modal fade ${showModal ? "show" : ""}`.trim()}
+        className={`modal fade header-modal ${showModal ? "show" : ""}`.trim()}
         tabIndex="-1"
         aria-labelledby="navigationModalLabel"
         aria-hidden={!showModal}
