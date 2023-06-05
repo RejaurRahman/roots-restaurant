@@ -13,6 +13,7 @@ import Shop from "./routes/Shop/Shop.component"
 import TermsConditions from "./routes/Documents/TermsConditions.component"
 
 import "./styles/styles.scss"
+import PrivacyPolicy from "./routes/Documents/PrivacyPolicy.component"
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route index element={<Home />}  />
           <Route path="/login" element={<Login />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/register" element={<Register />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />

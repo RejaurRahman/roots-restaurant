@@ -33,9 +33,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 10. faq
 11. shop
 12. shop-single
-13. privacy-policy
-14. sitemap
-15. sustainability
+13. sitemap
+14. sustainability
 
 ## Node Version
 
