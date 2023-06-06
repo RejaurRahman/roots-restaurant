@@ -6,6 +6,12 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.component"
 import "./Documents.styles.scss"
 
 const PrivacyPolicy = () => {
+  const currentDate = new Date().toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <>
       <PageBanner label="Privacy Policy" />
@@ -14,7 +20,7 @@ const PrivacyPolicy = () => {
       <div class="container documents-container">
         <div class="row">
           <div class="col-12">
-            <p class="italic">Last updated: February 08, 2021</p>
+            <p class="italic">Last updated: {currentDate}</p>
 
             <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 

@@ -6,6 +6,12 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.component"
 import "./Documents.styles.scss"
 
 const TermsConditions = () => {
+  const currentDate = new Date().toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <>
       <PageBanner label="Terms and Conditions" />
@@ -14,7 +20,7 @@ const TermsConditions = () => {
       <div class="container documents-container">
         <div class="row">
           <div class="col-12">
-            <p class="italic">Welcome to Roots Restaurant!</p>
+            <p class="italic">Last updated: {currentDate}</p>
 
             <p>These terms and conditions outline the rules and regulations for the use of Roots Restaurant&apos;s Website, located at <a href="https://rootsrestaurant.rejaurrahman.co.uk">https://app.netlify.com/sites/roots-restaurant/</a>.</p>
 
