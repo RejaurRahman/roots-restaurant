@@ -29,12 +29,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 6. media-single
 7. media-author
 8. media-category
-9. coronavirus-faq
-10. faq
-11. shop
-12. shop-single
-13. sitemap
-14. sustainability
+9. shop
+10. shop-single
+11. sitemap
 
 ## Node Version
 

@@ -24,7 +24,7 @@ const TermsConditions = () => {
 
             <h3><strong>Cookies</strong></h3>
 
-            <p>We employ the use of cookies. By accessing Roots Restaurant, you agreed to use cookies in agreement with the Roots Restaurant's Privacy Policy.</p>
+            <p>We employ the use of cookies. By accessing Roots Restaurant, you agreed to use cookies in agreement with the Roots Restaurant&apos;s Privacy Policy.</p>
 
             <p>Most interactive websites use cookies to let us retrieve the user&apos;s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
 
@@ -97,7 +97,7 @@ const TermsConditions = () => {
               <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party&apos;s site.</li>
             </ul>
 
-            <p>No use of Roots Restaurant's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+            <p>No use of Roots Restaurant&apos;s logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
 
             <h3><strong>iFrames</strong></h3>
 
